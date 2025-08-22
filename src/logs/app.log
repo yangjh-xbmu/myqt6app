@@ -1,0 +1,19 @@
+2025-08-22 15:53:10,691 - main - INFO - 日志系统已配置 - 级别: INFO
+2025-08-22 15:53:53,262 - main - INFO - 日志系统已配置 - 级别: INFO
+2025-08-22 15:53:53,372 - AppLauncher - INFO - 启动模式: main
+2025-08-22 15:53:53,372 - AppLauncher - ERROR - MainWindow类未找到
+2025-08-22 15:53:56,629 - main - ERROR - 启动模式 main 失败
+2025-08-22 15:54:19,702 - main - INFO - 日志系统已配置 - 级别: INFO
+2025-08-22 15:54:19,805 - AppLauncher - INFO - 启动模式: main
+2025-08-22 15:54:19,805 - AppLauncher - ERROR - MainWindow类未找到
+2025-08-22 15:54:24,301 - main - ERROR - 启动模式 main 失败
+2025-08-22 15:57:06,362 - main - INFO - 日志系统已配置 - 级别: INFO
+2025-08-22 15:57:06,478 - AppLauncher - INFO - 启动模式: main
+2025-08-22 15:57:06,671 - AppLauncher - INFO - 主窗口已启动
+2025-08-22 15:57:06,671 - main - INFO - 应用程序已启动 - 模式: main
+2025-08-22 16:11:02,201 - main - INFO - 应用程序退出 - 退出码: 0
+2025-08-22 16:11:12,794 - main - INFO - 日志系统已配置 - 级别: INFO
+2025-08-22 16:11:12,903 - AppLauncher - INFO - 启动模式: login
+2025-08-22 16:11:13,078 - AppLauncher - INFO - 登录窗口已启动
+2025-08-22 16:11:13,078 - main - INFO - 应用程序已启动 - 模式: login
+2025-08-22 16:12:24,985 - main - INFO - 应用程序退出 - 退出码: 0
