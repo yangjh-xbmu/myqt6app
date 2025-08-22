@@ -3,10 +3,12 @@
 包含全局测试配置和共享夹具
 """
 
-import pytest
 import sys
 from pathlib import Path
+
+import pytest
 from PyQt6.QtWidgets import QApplication
+
 
 # 添加src目录到Python路径
 src_path = Path(__file__).parent.parent / "src"
@@ -24,7 +26,7 @@ def qtApp():
 
 
 @pytest.fixture
-def qtBot(qtApp):
+def qtBot(qtApp):  # pylint: disable=redefined-outer-name
     """创建QtBot用于UI交互测试"""
     from pytestqt.qtbot import QtBot
     return QtBot(qtApp)
@@ -49,13 +51,13 @@ def mockDatabase():
         def __init__(self):
             self.connected = True
             self.data = {}
-        
-        def execute(self, query, params=None):
+
+        def execute(self, query, params=None):  # pylint: disable=unused-argument
             return {"success": True, "data": []}
-        
+
         def close(self):
             self.connected = False
-    
+
     return MockDatabase()
 
 
@@ -65,4 +67,3 @@ def setupTestEnvironment():
     # 测试前设置
     yield
     # 测试后清理
-    pass

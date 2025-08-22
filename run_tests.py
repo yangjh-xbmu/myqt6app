@@ -26,7 +26,7 @@ def runCommand(command, description):
     print(f"执行: {description}")
     print(f"命令: {' '.join(command)}")
     print(f"{'=' * 60}")
-    
+
     try:
         subprocess.run(command, check=True, capture_output=False)
         print(f"\n✅ {description} - 成功完成")
@@ -73,25 +73,25 @@ def runFastTests():
 def runCoverageTests():
     """运行测试并生成覆盖率报告"""
     commands = [
-        (["pytest", "--cov=src", "--cov-report=term-missing", "--cov-report=html"], 
+        (["pytest", "--cov=src", "--cov-report=term-missing", "--cov-report=html"],
          "运行测试并生成覆盖率报告")
     ]
-    
+
     success = True
     for command, description in commands:
         if not runCommand(command, description):
             success = False
-    
+
     if success:
         print("\n📊 覆盖率报告已生成:")
         print("  - 终端报告: 已显示在上方")
         print("  - HTML报告: htmlcov/index.html")
-        
+
         # 尝试打开HTML报告
-        html_report = Path("htmlcov/index.html")
-        if html_report.exists():
-            print(f"  - 文件路径: {html_report.absolute()}")
-    
+        htmlReport = Path("htmlcov/index.html")
+        if htmlReport.exists():
+            print(f"  - 文件路径: {htmlReport.absolute()}")
+
     return success
 
 
@@ -102,12 +102,12 @@ def runLinting():
         (["pylint", "src/"], "运行代码质量检查 (Pylint)"),
         (["isort", "--check-only", "src/", "tests/"], "检查导入排序 (isort)")
     ]
-    
+
     success = True
     for command, description in commands:
         if not runCommand(command, description):
             success = False
-    
+
     return success
 
 
@@ -116,7 +116,7 @@ def runSpecificFile(filepath):
     if not Path(filepath).exists():
         print(f"❌ 错误: 文件不存在 - {filepath}")
         return False
-    
+
     command = ["pytest", "-v", filepath]
     return runCommand(command, f"运行测试文件: {filepath}")
 
@@ -124,42 +124,42 @@ def runSpecificFile(filepath):
 def checkEnvironment():
     """检查测试环境"""
     print("🔍 检查测试环境...")
-    
+
     # 检查Python版本
-    python_version = sys.version_info
-    print(f"Python版本: {python_version.major}.{python_version.minor}.{python_version.micro}")
-    
+    pythonVersion = sys.version_info
+    print(f"Python版本: {pythonVersion.major}.{pythonVersion.minor}.{pythonVersion.micro}")
+
     # 检查必要的包
-    required_packages = [
+    requiredPackages = [
         ("pytest", "pytest"),
-        ("pytest-qt", "pytestqt"), 
+        ("pytest-qt", "pytestqt"),
         ("PyQt6", "PyQt6"),
         ("qfluentwidgets", "qfluentwidgets")
     ]
-    
-    missing_packages = []
-    for package_name, import_name in required_packages:
+
+    missingPackages = []
+    for packageName, importName in requiredPackages:
         try:
-            __import__(import_name)
-            print(f"✅ {package_name} - 已安装")
+            __import__(importName)
+            print(f"✅ {packageName} - 已安装")
         except ImportError:
-            print(f"❌ {package_name} - 未安装")
-            missing_packages.append(package_name)
-    
-    if missing_packages:
-        print(f"\n⚠️  缺少以下包: {', '.join(missing_packages)}")
+            print(f"❌ {packageName} - 未安装")
+            missingPackages.append(packageName)
+
+    if missingPackages:
+        print(f"\n⚠️  缺少以下包: {', '.join(missingPackages)}")
         print("安装命令:")
-        print(f"pip install {' '.join(missing_packages)}")
+        print(f"pip install {' '.join(missingPackages)}")
         return False
-    
+
     # 检查测试目录
-    test_dirs = ["tests/unit", "tests/integration", "tests/ui", "tests/fixtures"]
-    for test_dir in test_dirs:
-        if Path(test_dir).exists():
-            print(f"✅ {test_dir} - 目录存在")
+    testDirs = ["tests/unit", "tests/integration", "tests/ui", "tests/fixtures"]
+    for testDir in testDirs:
+        if Path(testDir).exists():
+            print(f"✅ {testDir} - 目录存在")
         else:
-            print(f"❌ {test_dir} - 目录不存在")
-    
+            print(f"❌ {testDir} - 目录不存在")
+
     print("\n✅ 环境检查完成")
     return True
 
@@ -182,7 +182,7 @@ def main():
   python run_tests.py --check                  # 检查测试环境
         """
     )
-    
+
     parser.add_argument("--all", action="store_true", help="运行所有测试")
     parser.add_argument("--unit", action="store_true", help="运行单元测试")
     parser.add_argument("--integration", action="store_true", help="运行集成测试")
@@ -192,43 +192,43 @@ def main():
     parser.add_argument("--lint", action="store_true", help="运行代码质量检查")
     parser.add_argument("--file", type=str, help="运行特定测试文件")
     parser.add_argument("--check", action="store_true", help="检查测试环境")
-    
+
     args = parser.parse_args()
-    
+
     # 如果没有提供参数，显示帮助
     if not any(vars(args).values()):
         parser.print_help()
         return
-    
+
     success = True
-    
+
     if args.check:
         success = checkEnvironment() and success
-    
+
     if args.all:
         success = runAllTests() and success
-    
+
     if args.unit:
         success = runUnitTests() and success
-    
+
     if args.integration:
         success = runIntegrationTests() and success
-    
+
     if args.ui:
         success = runUiTests() and success
-    
+
     if args.fast:
         success = runFastTests() and success
-    
+
     if args.coverage:
         success = runCoverageTests() and success
-    
+
     if args.lint:
         success = runLinting() and success
-    
+
     if args.file:
         success = runSpecificFile(args.file) and success
-    
+
     # 显示最终结果
     print("\n" + "=" * 60)
     if success:

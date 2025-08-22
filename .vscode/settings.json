@@ -5,5 +5,19 @@
     "python.linting.pylintEnabled": true,
     "python.linting.pylintArgs": [
         "--rcfile=${workspaceFolder}/.pylintrc"
-    ]
+    ],
+    "python.formatting.provider": "black",
+    "python.sortImports.args": [
+        "--profile=black"
+    ],
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "explicit"
+    },
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        }
+    }
 }

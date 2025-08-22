@@ -1,6 +1,6 @@
 [flake8]
 # 忽略行长度检查
-ignore = E501
+ignore = [E501, F401]
 # 或者设置更长的行长度限制
 # max-line-length = 120
 

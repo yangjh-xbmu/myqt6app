@@ -65,7 +65,7 @@ python user_auth_app.py         # 用户认证应用
 
 项目采用现代化的分层架构，将代码按职责分离到不同层次：
 
-```
+```txt
 myqt6app/
 ├── src/                       # 源代码目录（分层架构）
 │   ├── main.py                # 统一应用入口
@@ -246,7 +246,7 @@ npx wrangler d1 execute qt6-user-db --file=schema.sql
 - 避免循环依赖
 - 按层次组织导入语句
 
-## 🧪 自动化测试
+## 🧪 测试与自动化
 
 ### 快速开始
 

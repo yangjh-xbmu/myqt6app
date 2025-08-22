@@ -569,3 +569,24 @@ AttributeError: 'AuthService' object has no attribute 'is_logged_in'. Did you me
 2025-08-22 19:55:53,942 - ui.windows.login_window - INFO - 登录成功
 2025-08-22 19:55:53,948 - AppLauncher - INFO - 用户登录成功: yangjh
 2025-08-22 19:55:53,996 - AppLauncher - INFO - 主窗口已启动
+2025-08-22 21:16:43,511 - main - INFO - 日志系统已配置 - 级别: INFO
+2025-08-22 21:16:43,612 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 21:16:43,612 - session_manager - INFO - 访问令牌已过期或无效，尝试刷新
+2025-08-22 21:16:43,612 - AppLauncher - INFO - 启动模式: main
+2025-08-22 21:16:43,612 - session_manager - INFO - 访问令牌已过期或无效，尝试刷新
+2025-08-22 21:16:43,612 - AppLauncher - INFO - 用户未登录，启动登录窗口
+2025-08-22 21:16:43,612 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 21:16:43,612 - session_manager - INFO - 访问令牌已过期或无效，尝试刷新
+2025-08-22 21:16:43,790 - AppLauncher - INFO - 登录窗口已启动
+2025-08-22 21:16:43,790 - main - INFO - 应用程序已启动 - 模式: main
+2025-08-22 21:16:54,474 - data.api.auth_client - INFO - 尝试登录用户: yangjh@yeah.net
+2025-08-22 21:16:57,707 - data.api.auth_client - INFO - 用户登录成功: yangjh@yeah.net
+2025-08-22 21:16:57,708 - session_manager - INFO - 用户 yangjh 会话已开始
+2025-08-22 21:16:57,708 - auth_service - INFO - 用户 yangjh@yeah.net 登录成功
+2025-08-22 21:16:57,708 - ui.windows.login_window - INFO - 登录成功
+2025-08-22 21:16:57,719 - AppLauncher - INFO - 用户登录成功: yangjh
+2025-08-22 21:16:57,740 - AppLauncher - INFO - 开始创建MainWindow实例...
+2025-08-22 21:16:57,758 - AppLauncher - INFO - MainWindow实例创建成功
+2025-08-22 21:16:57,758 - AppLauncher - INFO - 开始显示主窗口...
+2025-08-22 21:16:57,774 - AppLauncher - INFO - 主窗口显示成功
+2025-08-22 21:16:57,774 - AppLauncher - INFO - 主窗口已启动

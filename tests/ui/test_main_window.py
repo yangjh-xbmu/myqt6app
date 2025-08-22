@@ -7,10 +7,14 @@
 """
 
 import pytest
-from PyQt6.QtWidgets import QMainWindow, QWidget, QVBoxLayout, QLabel
 from PyQt6.QtCore import Qt
 from PyQt6.QtGui import QFont
-from qfluentwidgets import TitleLabel, PrimaryPushButton
+from PyQt6.QtWidgets import QLabel
+from PyQt6.QtWidgets import QMainWindow
+from PyQt6.QtWidgets import QVBoxLayout
+from PyQt6.QtWidgets import QWidget
+from qfluentwidgets import PrimaryPushButton
+from qfluentwidgets import TitleLabel
 
 
 class MainWindowForTest(QMainWindow):
@@ -164,6 +168,7 @@ class TestMainWindowComponents:
     """主窗口组件测试类"""
 
     @pytest.mark.ui
+    # pylint: disable=unused-argument  # pyright: ignore[reportUnusedParameter]
     def testBasicMainWindow(self, qtApp):
         """测试基本主窗口创建"""
         window = MainWindowForTest()
@@ -171,6 +176,7 @@ class TestMainWindowComponents:
         assert window.centralWidget() is not None
 
     @pytest.mark.ui
+    # pylint: disable=unused-argument  # pyright: ignore[reportUnusedParameter]
     def testMainWindowWithMenu(self, qtApp):
         """测试带菜单的主窗口"""
         window = MainWindowWithMenuForTest()
@@ -179,6 +185,7 @@ class TestMainWindowComponents:
         assert window.centralWidget() is not None
 
     @pytest.mark.ui
+    # pylint: disable=unused-argument  # pyright: ignore[reportUnusedParameter]
     def testStepByStepWindow(self, qtApp):
         """测试逐步创建的窗口"""
         window = MainWindowStepByStepForTest()
@@ -187,6 +194,7 @@ class TestMainWindowComponents:
         assert window.centralWidget() is not None
 
     @pytest.mark.ui
+    # pylint: disable=unused-argument  # pyright: ignore[reportUnusedParameter]
     def testWindowGeometry(self, qtApp):
         """测试窗口几何属性"""
         window = MainWindowForTest()
@@ -195,7 +203,7 @@ class TestMainWindowComponents:
         assert geometry.height() == 600
 
     @pytest.mark.ui
-    def testWindowFont(self, qtApp):
+    def testWindowFont(self, qtApp):  # pylint: disable=unused-argument  # pyright: ignore[reportUnusedParameter]
         """测试窗口字体设置"""
         window = MainWindowWithMenuForTest()
         font = window.font()

@@ -22,6 +22,7 @@ make setup-auto-test
 ```
 
 这个命令会：
+
 - 安装所有开发依赖
 - 启用Git钩子
 - 配置自动测试环境
@@ -181,6 +182,7 @@ python_functions = test_* test*  # 支持camelCase命名
 ### 测试配置 (`tests/conftest.py`)
 
 包含pytest fixtures和测试配置，支持：
+
 - PyQt6应用程序测试
 - 数据库测试fixtures
 - 模拟对象配置
@@ -190,6 +192,7 @@ python_functions = test_* test*  # 支持camelCase命名
 ### 常见问题
 
 1. **文件监控不工作**
+
    ```bash
    # 检查watchdog是否安装
    pip install watchdog
@@ -199,6 +202,7 @@ python_functions = test_* test*  # 支持camelCase命名
    ```
 
 2. **Git钩子不执行**
+
    ```bash
    # 检查钩子权限
    ls -la .git/hooks/
@@ -209,6 +213,7 @@ python_functions = test_* test*  # 支持camelCase命名
    ```
 
 3. **测试失败**
+
    ```bash
    # 查看详细测试输出
    python run_tests.py --fast -v
@@ -225,6 +230,7 @@ python_functions = test_* test*  # 支持camelCase命名
 ### 调试技巧
 
 1. **本地模拟CI环境**
+
    ```bash
    # 设置环境变量
    export QT_QPA_PLATFORM=offscreen
@@ -234,6 +240,7 @@ python_functions = test_* test*  # 支持camelCase命名
    ```
 
 2. **查看测试覆盖率**
+
    ```bash
    # 生成HTML覆盖率报告
    python run_tests.py --coverage
@@ -241,6 +248,7 @@ python_functions = test_* test*  # 支持camelCase命名
    ```
 
 3. **性能分析**
+
    ```bash
    # 运行性能分析
    python -m pytest --durations=10 tests/
@@ -251,6 +259,7 @@ python_functions = test_* test*  # 支持camelCase命名
 ### 开发工作流
 
 1. **开发前**: 启动文件监控
+
    ```bash
    make watch
    ```
@@ -258,16 +267,19 @@ python_functions = test_* test*  # 支持camelCase命名
 2. **开发中**: 编写代码，自动运行测试
 
 3. **提交前**: 确保所有测试通过
+
    ```bash
    make test
    ```
 
 4. **提交**: Git钩子自动运行测试
+
    ```bash
    git commit -m "feat: 新功能"
    ```
 
 5. **推送**: 完整测试套件自动运行
+
    ```bash
    git push
    ```
