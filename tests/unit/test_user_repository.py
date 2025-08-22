@@ -112,7 +112,7 @@ except ImportError:
 class TestUserRepository:
     """用户仓库测试类"""
 
-    def setupMethod(self):
+    def setup_method(self):  # pylint: disable=invalid-name
         """测试前设置"""
         self.mockDb = Mock()
         self.userRepo = UserRepository(self.mockDb)
@@ -261,6 +261,6 @@ class TestUserRepository:
         # 验证结果为None（异常被捕获）
         assert result is None
 
-    def teardownMethod(self):
+    def teardown_method(self):  # pylint: disable=invalid-name
         """测试后清理"""
         self.mockDb.reset_mock()

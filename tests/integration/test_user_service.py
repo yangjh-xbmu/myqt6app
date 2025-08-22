@@ -155,7 +155,7 @@ class UserService:
 class TestUserServiceIntegration:
     """用户服务集成测试类"""
 
-    def setupMethod(self):
+    def setup_method(self):  # pylint: disable=invalid-name
         """测试前设置"""
         self.mockRepo = MockUserRepository()
         self.userService = UserService(self.mockRepo)
