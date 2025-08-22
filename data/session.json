@@ -1,0 +1,16 @@
+{
+  "user": {
+    "id": 4,
+    "username": "yangjh",
+    "email": "yangjh@yeah.net",
+    "token": null,
+    "createdAt": "2025-08-22T19:55:53.941043",
+    "updatedAt": "2025-08-22T19:55:53.941054",
+    "isActive": true
+  },
+  "accessToken": null,
+  "refreshToken": null,
+  "loginTime": "2025-08-22T19:55:53.941469",
+  "rememberMe": true,
+  "lastActivity": "2025-08-22T19:55:53.941473"
+}

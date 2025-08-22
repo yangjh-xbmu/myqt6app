@@ -1,0 +1,571 @@
+2025-08-22 16:24:24,785 - main - INFO - 日志系统已配置 - 级别: INFO
+2025-08-22 16:24:24,929 - AppLauncher - INFO - 启动模式: main
+2025-08-22 16:24:25,146 - AppLauncher - INFO - 主窗口已启动
+2025-08-22 16:24:25,146 - main - INFO - 应用程序已启动 - 模式: main
+2025-08-22 16:50:52,662 - jwt_manager - WARNING - 使用自动生成的JWT密钥，生产环境请配置固定密钥
+2025-08-22 16:51:53,083 - jwt_manager - WARNING - 使用自动生成的JWT密钥，生产环境请配置固定密钥
+2025-08-22 16:51:59,256 - jwt_manager - WARNING - 使用自动生成的JWT密钥，生产环境请配置固定密钥
+2025-08-22 16:51:59,275 - main - INFO - 日志系统已配置 - 级别: INFO
+2025-08-22 16:51:59,275 - main - DEBUG - 调试模式已启用
+2025-08-22 16:51:59,402 - jwt_manager - WARNING - 使用自动生成的JWT密钥，生产环境请配置固定密钥
+2025-08-22 16:51:59,402 - jwt_manager - WARNING - 使用自动生成的JWT密钥，生产环境请配置固定密钥
+2025-08-22 16:52:38,109 - jwt_manager - WARNING - 使用自动生成的JWT密钥，生产环境请配置固定密钥
+2025-08-22 16:52:38,133 - main - INFO - 日志系统已配置 - 级别: INFO
+2025-08-22 16:52:38,133 - main - DEBUG - 调试模式已启用
+2025-08-22 16:52:38,250 - jwt_manager - WARNING - 使用自动生成的JWT密钥，生产环境请配置固定密钥
+2025-08-22 16:52:38,251 - jwt_manager - WARNING - 使用自动生成的JWT密钥，生产环境请配置固定密钥
+2025-08-22 16:52:38,251 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 16:52:38,251 - session_manager - DEBUG - 没有找到保存的会话文件
+2025-08-22 16:52:38,251 - auth_service - DEBUG - 没有可恢复的会话
+2025-08-22 16:52:38,251 - AppLauncher - INFO - 启动模式: main
+2025-08-22 16:52:38,251 - session_manager - DEBUG - 没有找到保存的会话文件
+2025-08-22 16:52:38,251 - auth_service - DEBUG - 没有可恢复的会话
+2025-08-22 16:52:38,251 - AppLauncher - INFO - 用户未登录，启动登录窗口
+2025-08-22 16:52:38,251 - AppLauncher - ERROR - LoginWindow类未找到
+2025-08-22 16:52:43,027 - main - ERROR - 启动模式 main 失败
+2025-08-22 16:53:43,712 - jwt_manager - WARNING - 使用自动生成的JWT密钥，生产环境请配置固定密钥
+2025-08-22 16:53:43,738 - main - INFO - 日志系统已配置 - 级别: INFO
+2025-08-22 16:53:43,738 - main - DEBUG - 调试模式已启用
+2025-08-22 16:53:43,857 - jwt_manager - WARNING - 使用自动生成的JWT密钥，生产环境请配置固定密钥
+2025-08-22 16:53:43,857 - jwt_manager - WARNING - 使用自动生成的JWT密钥，生产环境请配置固定密钥
+2025-08-22 16:53:43,857 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 16:53:43,857 - session_manager - DEBUG - 没有找到保存的会话文件
+2025-08-22 16:53:43,857 - auth_service - DEBUG - 没有可恢复的会话
+2025-08-22 16:53:43,857 - AppLauncher - INFO - 启动模式: main
+2025-08-22 16:53:43,857 - session_manager - DEBUG - 没有找到保存的会话文件
+2025-08-22 16:53:43,857 - auth_service - DEBUG - 没有可恢复的会话
+2025-08-22 16:53:43,857 - AppLauncher - INFO - 用户未登录，启动登录窗口
+2025-08-22 16:53:43,858 - jwt_manager - WARNING - 使用自动生成的JWT密钥，生产环境请配置固定密钥
+2025-08-22 16:53:43,858 - jwt_manager - WARNING - 使用自动生成的JWT密钥，生产环境请配置固定密钥
+2025-08-22 16:53:43,858 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 16:53:43,858 - session_manager - DEBUG - 没有找到保存的会话文件
+2025-08-22 16:53:43,858 - auth_service - DEBUG - 没有可恢复的会话
+2025-08-22 16:53:44,042 - AppLauncher - INFO - 登录窗口已启动
+2025-08-22 16:53:44,042 - main - INFO - 应用程序已启动 - 模式: main
+2025-08-22 16:53:57,440 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-08-22 16:53:57,442 - data.api.auth_client - INFO - 尝试登录用户: yangjh@yeah.net
+2025-08-22 16:53:58,467 - data.api.auth_client - ERROR - API请求HTTP错误: POST http://localhost:8000/api/auth/login -> 503: {'message': 'HTTP Error 503: Service Unavailable'}
+2025-08-22 16:53:58,467 - auth_service - ERROR - 登录失败: HTTP 503: HTTP Error 503: Service Unavailable
+2025-08-22 16:53:58,467 - ui.windows.login_window - WARNING - 登录失败: 登录失败: HTTP 503: HTTP Error 503: Service Unavailable
+2025-08-22 16:54:26,951 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-08-22 16:54:26,953 - data.api.auth_client - INFO - 尝试登录用户: yangjh@yeah.net
+2025-08-22 16:54:27,966 - data.api.auth_client - ERROR - API请求HTTP错误: POST http://localhost:8000/api/auth/login -> 503: {'message': 'HTTP Error 503: Service Unavailable'}
+2025-08-22 16:54:27,966 - auth_service - ERROR - 登录失败: HTTP 503: HTTP Error 503: Service Unavailable
+2025-08-22 16:54:27,966 - ui.windows.login_window - WARNING - 登录失败: 登录失败: HTTP 503: HTTP Error 503: Service Unavailable
+2025-08-22 17:02:04,522 - jwt_manager - WARNING - 使用自动生成的JWT密钥，生产环境请配置固定密钥
+2025-08-22 17:02:04,544 - main - INFO - 日志系统已配置 - 级别: INFO
+2025-08-22 17:02:04,544 - main - DEBUG - 调试模式已启用
+2025-08-22 17:02:04,653 - jwt_manager - WARNING - 使用自动生成的JWT密钥，生产环境请配置固定密钥
+2025-08-22 17:02:04,653 - jwt_manager - WARNING - 使用自动生成的JWT密钥，生产环境请配置固定密钥
+2025-08-22 17:02:04,653 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 17:02:04,653 - session_manager - DEBUG - 没有找到保存的会话文件
+2025-08-22 17:02:04,653 - auth_service - DEBUG - 没有可恢复的会话
+2025-08-22 17:02:04,653 - AppLauncher - INFO - 启动模式: main
+2025-08-22 17:02:04,653 - session_manager - DEBUG - 没有找到保存的会话文件
+2025-08-22 17:02:04,653 - auth_service - DEBUG - 没有可恢复的会话
+2025-08-22 17:02:04,653 - AppLauncher - INFO - 用户未登录，启动登录窗口
+2025-08-22 17:02:04,653 - jwt_manager - WARNING - 使用自动生成的JWT密钥，生产环境请配置固定密钥
+2025-08-22 17:02:04,653 - jwt_manager - WARNING - 使用自动生成的JWT密钥，生产环境请配置固定密钥
+2025-08-22 17:02:04,654 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 17:02:04,654 - session_manager - DEBUG - 没有找到保存的会话文件
+2025-08-22 17:02:04,654 - auth_service - DEBUG - 没有可恢复的会话
+2025-08-22 17:02:04,840 - AppLauncher - INFO - 登录窗口已启动
+2025-08-22 17:02:04,841 - main - INFO - 应用程序已启动 - 模式: main
+2025-08-22 17:02:14,281 - jwt_manager - WARNING - 使用自动生成的JWT密钥，生产环境请配置固定密钥
+2025-08-22 17:02:14,294 - main - INFO - 日志系统已配置 - 级别: INFO
+2025-08-22 17:02:14,294 - main - DEBUG - 调试模式已启用
+2025-08-22 17:02:14,397 - jwt_manager - WARNING - 使用自动生成的JWT密钥，生产环境请配置固定密钥
+2025-08-22 17:02:14,397 - jwt_manager - WARNING - 使用自动生成的JWT密钥，生产环境请配置固定密钥
+2025-08-22 17:02:14,397 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 17:02:14,397 - session_manager - DEBUG - 没有找到保存的会话文件
+2025-08-22 17:02:14,397 - auth_service - DEBUG - 没有可恢复的会话
+2025-08-22 17:02:14,397 - AppLauncher - INFO - 启动模式: login
+2025-08-22 17:02:14,397 - jwt_manager - WARNING - 使用自动生成的JWT密钥，生产环境请配置固定密钥
+2025-08-22 17:02:14,397 - jwt_manager - WARNING - 使用自动生成的JWT密钥，生产环境请配置固定密钥
+2025-08-22 17:02:14,397 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 17:02:14,397 - session_manager - DEBUG - 没有找到保存的会话文件
+2025-08-22 17:02:14,397 - auth_service - DEBUG - 没有可恢复的会话
+2025-08-22 17:02:14,586 - AppLauncher - INFO - 登录窗口已启动
+2025-08-22 17:02:14,586 - main - INFO - 应用程序已启动 - 模式: login
+2025-08-22 17:02:30,401 - jwt_manager - WARNING - 使用自动生成的JWT密钥，生产环境请配置固定密钥
+2025-08-22 17:02:30,414 - main - INFO - 日志系统已配置 - 级别: INFO
+2025-08-22 17:02:30,414 - main - DEBUG - 调试模式已启用
+2025-08-22 17:02:30,518 - jwt_manager - WARNING - 使用自动生成的JWT密钥，生产环境请配置固定密钥
+2025-08-22 17:02:30,519 - jwt_manager - WARNING - 使用自动生成的JWT密钥，生产环境请配置固定密钥
+2025-08-22 17:02:30,519 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 17:02:30,519 - session_manager - DEBUG - 没有找到保存的会话文件
+2025-08-22 17:02:30,519 - auth_service - DEBUG - 没有可恢复的会话
+2025-08-22 17:02:30,519 - AppLauncher - INFO - 启动模式: login
+2025-08-22 17:02:30,519 - jwt_manager - WARNING - 使用自动生成的JWT密钥，生产环境请配置固定密钥
+2025-08-22 17:02:30,519 - jwt_manager - WARNING - 使用自动生成的JWT密钥，生产环境请配置固定密钥
+2025-08-22 17:02:30,519 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 17:02:30,519 - session_manager - DEBUG - 没有找到保存的会话文件
+2025-08-22 17:02:30,519 - auth_service - DEBUG - 没有可恢复的会话
+2025-08-22 17:02:30,686 - AppLauncher - INFO - 登录窗口已启动
+2025-08-22 17:02:30,687 - main - INFO - 应用程序已启动 - 模式: login
+2025-08-22 17:02:40,836 - main - INFO - 应用程序退出 - 退出码: 0
+2025-08-22 17:02:45,292 - jwt_manager - WARNING - 使用自动生成的JWT密钥，生产环境请配置固定密钥
+2025-08-22 17:02:45,305 - main - INFO - 日志系统已配置 - 级别: INFO
+2025-08-22 17:02:45,305 - main - DEBUG - 调试模式已启用
+2025-08-22 17:02:45,409 - jwt_manager - WARNING - 使用自动生成的JWT密钥，生产环境请配置固定密钥
+2025-08-22 17:02:45,409 - jwt_manager - WARNING - 使用自动生成的JWT密钥，生产环境请配置固定密钥
+2025-08-22 17:02:45,410 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 17:02:45,410 - session_manager - DEBUG - 没有找到保存的会话文件
+2025-08-22 17:02:45,410 - auth_service - DEBUG - 没有可恢复的会话
+2025-08-22 17:02:45,410 - AppLauncher - INFO - 启动模式: register
+2025-08-22 17:02:45,410 - AppLauncher - ERROR - RegisterWindow类未找到
+2025-08-22 17:02:58,556 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-08-22 17:02:58,558 - data.api.auth_client - INFO - 尝试登录用户: yangjh@yeah.net
+2025-08-22 17:02:58,586 - data.api.auth_client - DEBUG - API请求成功: POST http://localhost:8000/api/auth/login -> 200
+2025-08-22 17:02:58,587 - data.api.auth_client - WARNING - 用户登录失败: yangjh@yeah.net - 登录失败
+2025-08-22 17:02:58,587 - auth_service - ERROR - 登录失败: object AuthResponse can't be used in 'await' expression
+2025-08-22 17:02:58,587 - ui.windows.login_window - WARNING - 登录失败: 登录失败: object AuthResponse can't be used in 'await' expression
+2025-08-22 17:03:02,725 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-08-22 17:03:02,725 - data.api.auth_client - INFO - 尝试登录用户: yangjh@yeah.net
+2025-08-22 17:03:02,739 - data.api.auth_client - DEBUG - API请求成功: POST http://localhost:8000/api/auth/login -> 200
+2025-08-22 17:03:02,739 - data.api.auth_client - WARNING - 用户登录失败: yangjh@yeah.net - 登录失败
+2025-08-22 17:03:02,739 - auth_service - ERROR - 登录失败: object AuthResponse can't be used in 'await' expression
+2025-08-22 17:03:02,740 - ui.windows.login_window - WARNING - 登录失败: 登录失败: object AuthResponse can't be used in 'await' expression
+2025-08-22 17:11:54,723 - jwt_manager - WARNING - 使用自动生成的JWT密钥，生产环境请配置固定密钥
+2025-08-22 17:11:54,743 - main - INFO - 日志系统已配置 - 级别: INFO
+2025-08-22 17:11:54,866 - jwt_manager - WARNING - 使用自动生成的JWT密钥，生产环境请配置固定密钥
+2025-08-22 17:11:54,866 - jwt_manager - WARNING - 使用自动生成的JWT密钥，生产环境请配置固定密钥
+2025-08-22 17:11:54,866 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 17:11:54,866 - AppLauncher - INFO - 启动模式: main
+2025-08-22 17:11:54,866 - AppLauncher - INFO - 用户未登录，启动登录窗口
+2025-08-22 17:11:54,867 - jwt_manager - WARNING - 使用自动生成的JWT密钥，生产环境请配置固定密钥
+2025-08-22 17:11:54,867 - jwt_manager - WARNING - 使用自动生成的JWT密钥，生产环境请配置固定密钥
+2025-08-22 17:11:54,867 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 17:11:55,076 - AppLauncher - INFO - 登录窗口已启动
+2025-08-22 17:11:55,076 - main - INFO - 应用程序已启动 - 模式: main
+2025-08-22 17:12:12,235 - data.api.auth_client - INFO - 尝试登录用户: yangjh@yeah.net
+2025-08-22 17:12:13,266 - data.api.auth_client - ERROR - API请求HTTP错误: POST http://localhost:8000/api/auth/login -> 503: {'message': 'HTTP Error 503: Service Unavailable'}
+2025-08-22 17:12:13,266 - auth_service - ERROR - 登录失败: HTTP 503: HTTP Error 503: Service Unavailable
+2025-08-22 17:12:13,267 - ui.windows.login_window - WARNING - 登录失败: 登录失败: HTTP 503: HTTP Error 503: Service Unavailable
+2025-08-22 17:14:22,562 - jwt_manager - WARNING - 使用自动生成的JWT密钥，生产环境请配置固定密钥
+2025-08-22 17:14:22,583 - main - INFO - 日志系统已配置 - 级别: INFO
+2025-08-22 17:14:22,690 - jwt_manager - WARNING - 使用自动生成的JWT密钥，生产环境请配置固定密钥
+2025-08-22 17:14:22,690 - jwt_manager - WARNING - 使用自动生成的JWT密钥，生产环境请配置固定密钥
+2025-08-22 17:14:22,691 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 17:14:22,691 - AppLauncher - INFO - 启动模式: main
+2025-08-22 17:14:22,691 - AppLauncher - INFO - 用户未登录，启动登录窗口
+2025-08-22 17:14:22,691 - jwt_manager - WARNING - 使用自动生成的JWT密钥，生产环境请配置固定密钥
+2025-08-22 17:14:22,691 - jwt_manager - WARNING - 使用自动生成的JWT密钥，生产环境请配置固定密钥
+2025-08-22 17:14:22,691 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 17:14:22,862 - AppLauncher - INFO - 登录窗口已启动
+2025-08-22 17:14:22,862 - main - INFO - 应用程序已启动 - 模式: main
+2025-08-22 17:14:38,590 - data.api.auth_client - INFO - 尝试登录用户: yangjh@yeah.net
+2025-08-22 17:14:41,927 - data.api.auth_client - WARNING - 用户登录失败: yangjh@yeah.net - 登录失败
+2025-08-22 17:14:41,928 - auth_service - ERROR - 登录失败: object AuthResponse can't be used in 'await' expression
+2025-08-22 17:14:41,928 - ui.windows.login_window - WARNING - 登录失败: 登录失败: object AuthResponse can't be used in 'await' expression
+2025-08-22 17:20:06,715 - data.api.auth_client - INFO - 尝试登录用户: yangjh@yeah.net
+2025-08-22 17:20:09,596 - data.api.auth_client - WARNING - 用户登录失败: yangjh@yeah.net - 登录失败
+2025-08-22 17:20:09,597 - auth_service - ERROR - 登录失败: object AuthResponse can't be used in 'await' expression
+2025-08-22 17:20:09,597 - ui.windows.login_window - WARNING - 登录失败: 登录失败: object AuthResponse can't be used in 'await' expression
+2025-08-22 17:20:53,445 - jwt_manager - WARNING - 使用自动生成的JWT密钥，生产环境请配置固定密钥
+2025-08-22 17:20:53,465 - main - INFO - 日志系统已配置 - 级别: INFO
+2025-08-22 17:20:53,572 - jwt_manager - WARNING - 使用自动生成的JWT密钥，生产环境请配置固定密钥
+2025-08-22 17:20:53,572 - jwt_manager - WARNING - 使用自动生成的JWT密钥，生产环境请配置固定密钥
+2025-08-22 17:20:53,572 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 17:20:53,572 - AppLauncher - INFO - 启动模式: main
+2025-08-22 17:20:53,572 - AppLauncher - INFO - 用户未登录，启动登录窗口
+2025-08-22 17:20:53,572 - jwt_manager - WARNING - 使用自动生成的JWT密钥，生产环境请配置固定密钥
+2025-08-22 17:20:53,572 - jwt_manager - WARNING - 使用自动生成的JWT密钥，生产环境请配置固定密钥
+2025-08-22 17:20:53,572 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 17:20:53,750 - AppLauncher - INFO - 登录窗口已启动
+2025-08-22 17:20:53,750 - main - INFO - 应用程序已启动 - 模式: main
+2025-08-22 17:21:11,484 - data.api.auth_client - INFO - 尝试登录用户: yangjh@yeah.net
+2025-08-22 17:21:14,331 - data.api.auth_client - WARNING - 用户登录失败: yangjh@yeah.net - 登录处理失败: 'pyodide.ffi.JsProxy' object is not subscriptable
+2025-08-22 17:21:14,332 - auth_service - WARNING - 用户 yangjh@yeah.net 登录失败: 登录处理失败: 'pyodide.ffi.JsProxy' object is not subscriptable
+2025-08-22 17:21:14,332 - ui.windows.login_window - WARNING - 登录失败: 登录处理失败: 'pyodide.ffi.JsProxy' object is not subscriptable
+2025-08-22 17:29:07,830 - main - INFO - 日志系统已配置 - 级别: INFO
+2025-08-22 17:29:07,932 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 17:29:07,932 - AppLauncher - INFO - 启动模式: main
+2025-08-22 17:29:07,932 - AppLauncher - INFO - 用户未登录，启动登录窗口
+2025-08-22 17:29:07,932 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 17:29:08,104 - AppLauncher - INFO - 登录窗口已启动
+2025-08-22 17:29:08,104 - main - INFO - 应用程序已启动 - 模式: main
+2025-08-22 17:29:56,617 - data.api.auth_client - INFO - 尝试登录用户: yangjh@yeah.net
+2025-08-22 17:30:00,018 - data.api.auth_client - ERROR - 登录过程发生错误: User.__init__() got an unexpected keyword argument 'password_hash'
+2025-08-22 17:30:00,018 - auth_service - WARNING - 用户 yangjh@yeah.net 登录失败: 登录过程发生错误: User.__init__() got an unexpected keyword argument 'password_hash'
+2025-08-22 17:30:00,018 - ui.windows.login_window - WARNING - 登录失败: 登录过程发生错误: User.__init__() got an unexpected keyword argument 'password_hash'
+2025-08-22 17:31:02,034 - main - INFO - 日志系统已配置 - 级别: INFO
+2025-08-22 17:31:02,134 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 17:31:02,135 - AppLauncher - INFO - 启动模式: main
+2025-08-22 17:31:02,135 - AppLauncher - INFO - 用户未登录，启动登录窗口
+2025-08-22 17:31:02,135 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 17:31:02,312 - AppLauncher - INFO - 登录窗口已启动
+2025-08-22 17:31:02,312 - main - INFO - 应用程序已启动 - 模式: main
+2025-08-22 17:41:19,772 - main - INFO - 日志系统已配置 - 级别: INFO
+2025-08-22 17:41:19,879 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 17:41:19,879 - AppLauncher - INFO - 启动模式: main
+2025-08-22 17:41:19,879 - AppLauncher - INFO - 用户未登录，启动登录窗口
+2025-08-22 17:41:19,879 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 17:41:20,051 - AppLauncher - INFO - 登录窗口已启动
+2025-08-22 17:41:20,052 - main - INFO - 应用程序已启动 - 模式: main
+2025-08-22 17:41:31,302 - data.api.auth_client - INFO - 尝试登录用户: yangjh@yeah.net
+2025-08-22 17:41:34,358 - data.api.auth_client - INFO - 用户登录成功: yangjh@yeah.net
+2025-08-22 17:41:34,359 - session_manager - INFO - 用户 yangjh 会话已开始
+2025-08-22 17:41:34,359 - auth_service - WARNING - 设置自动刷新失败: 'AuthService' object has no attribute 'jwt_manager'
+2025-08-22 17:41:34,359 - auth_service - INFO - 用户 yangjh@yeah.net 登录成功
+2025-08-22 17:41:34,359 - ui.windows.login_window - INFO - 登录成功
+2025-08-22 17:41:34,362 - AppLauncher - INFO - 用户登录成功: Unknown
+2025-08-22 17:41:34,376 - AppLauncher - ERROR - MainWindow类未找到
+2025-08-22 17:41:34,444 - ui.windows.login_window - WARNING - 保存凭据失败: 'AppConfig' object has no attribute 'remove'
+2025-08-22 17:41:34,447 - main - INFO - 应用程序退出 - 退出码: 0
+2025-08-22 17:43:08,172 - main - INFO - 日志系统已配置 - 级别: INFO
+2025-08-22 17:43:08,281 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 17:43:08,281 - AppLauncher - INFO - 启动模式: main
+2025-08-22 17:43:08,281 - AppLauncher - INFO - 用户未登录，启动登录窗口
+2025-08-22 17:43:08,281 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 17:43:08,485 - AppLauncher - INFO - 登录窗口已启动
+2025-08-22 17:43:08,485 - main - INFO - 应用程序已启动 - 模式: main
+2025-08-22 17:43:23,205 - data.api.auth_client - INFO - 尝试登录用户: yangjh@yeah.net
+2025-08-22 17:43:25,862 - data.api.auth_client - INFO - 用户登录成功: yangjh@yeah.net
+2025-08-22 17:43:25,864 - session_manager - INFO - 用户 yangjh 会话已开始
+2025-08-22 17:43:25,864 - auth_service - INFO - 自动刷新定时器已启动
+2025-08-22 17:43:25,864 - auth_service - INFO - 用户 yangjh@yeah.net 登录成功
+2025-08-22 17:43:25,864 - ui.windows.login_window - INFO - 登录成功
+2025-08-22 17:43:25,869 - AppLauncher - INFO - 用户登录成功: Unknown
+2025-08-22 17:43:25,888 - AppLauncher - ERROR - MainWindow类未找到
+2025-08-22 17:43:25,947 - main - INFO - 应用程序退出 - 退出码: 0
+2025-08-22 17:49:01,140 - main - INFO - 日志系统已配置 - 级别: INFO
+2025-08-22 17:49:01,261 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 17:49:01,261 - AppLauncher - INFO - 启动模式: main
+2025-08-22 17:49:01,261 - AppLauncher - INFO - 用户未登录，启动登录窗口
+2025-08-22 17:49:01,261 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 17:49:01,459 - AppLauncher - INFO - 登录窗口已启动
+2025-08-22 17:49:01,460 - main - INFO - 应用程序已启动 - 模式: main
+2025-08-22 17:49:12,071 - data.api.auth_client - INFO - 尝试登录用户: yangjh@yeah.net
+2025-08-22 17:49:14,775 - data.api.auth_client - INFO - 用户登录成功: yangjh@yeah.net
+2025-08-22 17:49:14,775 - session_manager - INFO - 用户 yangjh 会话已开始
+2025-08-22 17:49:14,776 - auth_service - INFO - 自动刷新定时器已启动
+2025-08-22 17:49:14,776 - auth_service - INFO - 用户 yangjh@yeah.net 登录成功
+2025-08-22 17:49:14,776 - ui.windows.login_window - INFO - 登录成功
+2025-08-22 17:49:14,786 - AppLauncher - INFO - 用户登录成功: Unknown
+2025-08-22 17:49:14,808 - AppLauncher - ERROR - MainWindow类未找到
+2025-08-22 17:49:14,888 - main - INFO - 应用程序退出 - 退出码: 0
+2025-08-22 17:50:29,683 - main - INFO - 日志系统已配置 - 级别: INFO
+2025-08-22 17:50:29,814 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 17:50:29,814 - AppLauncher - INFO - 启动模式: main
+2025-08-22 17:50:29,814 - AppLauncher - INFO - 用户未登录，启动登录窗口
+2025-08-22 17:50:29,815 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 17:50:30,022 - AppLauncher - INFO - 登录窗口已启动
+2025-08-22 17:50:30,023 - main - INFO - 应用程序已启动 - 模式: main
+2025-08-22 17:50:38,472 - data.api.auth_client - INFO - 尝试登录用户: yangjh@yeah.net
+2025-08-22 17:50:41,212 - data.api.auth_client - INFO - 用户登录成功: yangjh@yeah.net
+2025-08-22 17:50:41,214 - session_manager - INFO - 用户 yangjh 会话已开始
+2025-08-22 17:50:41,214 - auth_service - INFO - 自动刷新定时器已启动
+2025-08-22 17:50:41,214 - auth_service - INFO - 用户 yangjh@yeah.net 登录成功
+2025-08-22 17:50:41,214 - ui.windows.login_window - INFO - 登录成功
+2025-08-22 17:50:41,223 - AppLauncher - INFO - 用户登录成功: Unknown
+2025-08-22 17:50:41,249 - AppLauncher - ERROR - MainWindow类未找到
+2025-08-22 17:50:41,317 - main - INFO - 应用程序退出 - 退出码: 0
+2025-08-22 17:57:08,551 - main - INFO - 日志系统已配置 - 级别: INFO
+2025-08-22 17:57:08,682 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 17:57:08,682 - AppLauncher - INFO - 启动模式: main
+2025-08-22 17:57:08,682 - AppLauncher - INFO - 用户未登录，启动登录窗口
+2025-08-22 17:57:08,683 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 17:57:08,885 - AppLauncher - INFO - 登录窗口已启动
+2025-08-22 17:57:08,885 - main - INFO - 应用程序已启动 - 模式: main
+2025-08-22 17:57:20,438 - data.api.auth_client - INFO - 尝试登录用户: yangjh@yeah.net
+2025-08-22 17:57:24,499 - data.api.auth_client - INFO - 用户登录成功: yangjh@yeah.net
+2025-08-22 17:57:24,500 - session_manager - INFO - 用户 yangjh 会话已开始
+2025-08-22 17:57:24,500 - auth_service - INFO - 自动刷新定时器已启动
+2025-08-22 17:57:24,500 - auth_service - INFO - 用户 yangjh@yeah.net 登录成功
+2025-08-22 17:57:24,500 - ui.windows.login_window - INFO - 登录成功
+2025-08-22 17:57:24,510 - AppLauncher - INFO - 用户登录成功: Unknown
+2025-08-22 17:57:24,551 - AppLauncher - ERROR - 启动主窗口失败: 'MainWindow' object has no attribute 'open_database_panel'
+Traceback (most recent call last):
+  File "/Users/yangjh/Desktop/repo/myqt6app/src/ui/launcher.py", line 188, in _launch_main_window
+    self.current_window = MainWindow()
+                          ~~~~~~~~~~^^
+  File "/Users/yangjh/Desktop/repo/myqt6app/src/ui/windows/main_window.py", line 31, in __init__
+    self.init_ui()
+    ~~~~~~~~~~~~^^
+  File "/Users/yangjh/Desktop/repo/myqt6app/src/ui/windows/main_window.py", line 91, in init_ui
+    db_btn.clicked.connect(self.open_database_panel)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MainWindow' object has no attribute 'open_database_panel'
+2025-08-22 17:57:24,617 - main - INFO - 应用程序退出 - 退出码: 0
+2025-08-22 17:58:59,877 - main - INFO - 日志系统已配置 - 级别: INFO
+2025-08-22 17:58:59,987 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 17:58:59,988 - AppLauncher - INFO - 启动模式: main
+2025-08-22 17:58:59,988 - AppLauncher - INFO - 用户未登录，启动登录窗口
+2025-08-22 17:58:59,988 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 17:59:00,180 - AppLauncher - INFO - 登录窗口已启动
+2025-08-22 17:59:00,180 - main - INFO - 应用程序已启动 - 模式: main
+2025-08-22 17:59:06,592 - data.api.auth_client - INFO - 尝试登录用户: yangjh@yeah.net
+2025-08-22 17:59:09,498 - data.api.auth_client - INFO - 用户登录成功: yangjh@yeah.net
+2025-08-22 17:59:09,499 - session_manager - INFO - 用户 yangjh 会话已开始
+2025-08-22 17:59:09,499 - auth_service - INFO - 自动刷新定时器已启动
+2025-08-22 17:59:09,499 - auth_service - INFO - 用户 yangjh@yeah.net 登录成功
+2025-08-22 17:59:09,499 - ui.windows.login_window - INFO - 登录成功
+2025-08-22 17:59:09,510 - AppLauncher - INFO - 用户登录成功: Unknown
+2025-08-22 17:59:09,547 - AppLauncher - ERROR - 启动主窗口失败: 'MainWindow' object has no attribute 'open_database_panel'
+Traceback (most recent call last):
+  File "/Users/yangjh/Desktop/repo/myqt6app/src/ui/launcher.py", line 188, in _launch_main_window
+    self.current_window = MainWindow()
+                          ~~~~~~~~~~^^
+  File "/Users/yangjh/Desktop/repo/myqt6app/src/ui/windows/main_window.py", line 31, in __init__
+    self.init_ui()
+    ~~~~~~~~~~~~^^
+  File "/Users/yangjh/Desktop/repo/myqt6app/src/ui/windows/main_window.py", line 91, in init_ui
+    db_btn.clicked.connect(self.open_database_panel)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MainWindow' object has no attribute 'open_database_panel'
+2025-08-22 17:59:09,618 - main - INFO - 应用程序退出 - 退出码: 0
+2025-08-22 17:59:59,736 - main - INFO - 日志系统已配置 - 级别: INFO
+2025-08-22 17:59:59,859 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 17:59:59,859 - AppLauncher - INFO - 启动模式: main
+2025-08-22 17:59:59,859 - AppLauncher - INFO - 用户未登录，启动登录窗口
+2025-08-22 17:59:59,860 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 18:00:00,052 - AppLauncher - INFO - 登录窗口已启动
+2025-08-22 18:00:00,052 - main - INFO - 应用程序已启动 - 模式: main
+2025-08-22 18:00:08,874 - data.api.auth_client - INFO - 尝试登录用户: yangjh@yeah.net
+2025-08-22 18:00:11,839 - data.api.auth_client - INFO - 用户登录成功: yangjh@yeah.net
+2025-08-22 18:00:11,840 - session_manager - INFO - 用户 yangjh 会话已开始
+2025-08-22 18:00:11,840 - auth_service - INFO - 自动刷新定时器已启动
+2025-08-22 18:00:11,840 - auth_service - INFO - 用户 yangjh@yeah.net 登录成功
+2025-08-22 18:00:11,840 - ui.windows.login_window - INFO - 登录成功
+2025-08-22 18:00:11,849 - AppLauncher - INFO - 用户登录成功: Unknown
+2025-08-22 18:00:11,901 - AppLauncher - INFO - 主窗口已启动
+2025-08-22 18:01:30,747 - main - INFO - 日志系统已配置 - 级别: INFO
+2025-08-22 18:01:30,857 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 18:01:30,857 - AppLauncher - INFO - 启动模式: main
+2025-08-22 18:01:30,857 - AppLauncher - INFO - 用户未登录，启动登录窗口
+2025-08-22 18:01:30,857 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 18:01:31,032 - AppLauncher - INFO - 登录窗口已启动
+2025-08-22 18:01:31,032 - main - INFO - 应用程序已启动 - 模式: main
+2025-08-22 18:01:44,668 - data.api.auth_client - INFO - 尝试登录用户: yangjh@yeah.net
+2025-08-22 18:01:45,901 - data.api.auth_client - INFO - 用户登录成功: yangjh@yeah.net
+2025-08-22 18:01:45,901 - session_manager - INFO - 用户 yangjh 会话已开始
+2025-08-22 18:01:45,902 - auth_service - INFO - 自动刷新定时器已启动
+2025-08-22 18:01:45,903 - auth_service - INFO - 用户 yangjh@yeah.net 登录成功
+2025-08-22 18:01:45,903 - ui.windows.login_window - INFO - 登录成功
+2025-08-22 18:01:45,909 - AppLauncher - INFO - 用户登录成功: Unknown
+2025-08-22 18:01:45,957 - AppLauncher - INFO - 主窗口已启动
+2025-08-22 19:30:14,993 - main - INFO - 日志系统已配置 - 级别: INFO
+2025-08-22 19:30:15,111 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 19:32:28,952 - main - INFO - 日志系统已配置 - 级别: INFO
+2025-08-22 19:32:29,061 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 19:32:29,061 - AppLauncher - INFO - 启动模式: login
+2025-08-22 19:32:29,061 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 19:32:29,297 - AppLauncher - INFO - 登录窗口已启动
+2025-08-22 19:32:29,297 - main - INFO - 应用程序已启动 - 模式: login
+2025-08-22 19:32:39,936 - data.api.auth_client - INFO - 尝试登录用户: yangjh@yeah.net
+2025-08-22 19:32:43,220 - data.api.auth_client - INFO - 用户登录成功: yangjh@yeah.net
+2025-08-22 19:32:43,221 - session_manager - INFO - 用户 yangjh 会话已开始
+2025-08-22 19:32:43,221 - auth_service - INFO - 用户 yangjh@yeah.net 登录成功
+2025-08-22 19:32:43,221 - ui.windows.login_window - INFO - 登录成功
+2025-08-22 19:32:43,234 - AppLauncher - INFO - 用户登录成功: Unknown
+2025-08-22 19:32:43,283 - AppLauncher - INFO - 主窗口已启动
+2025-08-22 19:33:30,315 - main - INFO - 日志系统已配置 - 级别: INFO
+2025-08-22 19:33:30,423 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 19:33:30,424 - AppLauncher - INFO - 启动模式: main
+2025-08-22 19:33:30,424 - AppLauncher - ERROR - 智能启动失败: 'AuthService' object has no attribute 'try_auto_login'
+Traceback (most recent call last):
+  File "/Users/yangjh/Desktop/repo/myqt6app/src/ui/launcher.py", line 114, in _smartLaunch
+    self.authService.try_auto_login()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AuthService' object has no attribute 'try_auto_login'. Did you mean: 'tryAutoLogin'?
+2025-08-22 19:33:30,425 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 19:33:30,614 - AppLauncher - INFO - 登录窗口已启动
+2025-08-22 19:33:30,614 - main - INFO - 应用程序已启动 - 模式: main
+2025-08-22 19:33:38,871 - data.api.auth_client - INFO - 尝试登录用户: yangjh@yeah.net
+2025-08-22 19:33:41,362 - data.api.auth_client - INFO - 用户登录成功: yangjh@yeah.net
+2025-08-22 19:33:41,363 - session_manager - INFO - 用户 yangjh 会话已开始
+2025-08-22 19:33:41,363 - auth_service - INFO - 用户 yangjh@yeah.net 登录成功
+2025-08-22 19:33:41,363 - ui.windows.login_window - INFO - 登录成功
+2025-08-22 19:33:41,373 - AppLauncher - INFO - 用户登录成功: Unknown
+2025-08-22 19:33:41,423 - AppLauncher - INFO - 主窗口已启动
+2025-08-22 19:34:02,016 - main - INFO - 日志系统已配置 - 级别: INFO
+2025-08-22 19:34:02,118 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 19:34:02,118 - AppLauncher - INFO - 启动模式: main
+2025-08-22 19:34:02,118 - AppLauncher - ERROR - 智能启动失败: 'AuthService' object has no attribute 'is_logged_in'
+Traceback (most recent call last):
+  File "/Users/yangjh/Desktop/repo/myqt6app/src/ui/launcher.py", line 117, in _smartLaunch
+    if self.authService.is_logged_in():
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AuthService' object has no attribute 'is_logged_in'. Did you mean: 'isLoggedIn'?
+2025-08-22 19:34:02,119 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 19:34:02,299 - AppLauncher - INFO - 登录窗口已启动
+2025-08-22 19:34:02,299 - main - INFO - 应用程序已启动 - 模式: main
+2025-08-22 19:34:15,597 - data.api.auth_client - INFO - 尝试登录用户: yangjh@yeah.net
+2025-08-22 19:34:18,511 - data.api.auth_client - INFO - 用户登录成功: yangjh@yeah.net
+2025-08-22 19:34:18,512 - session_manager - INFO - 用户 yangjh 会话已开始
+2025-08-22 19:34:18,512 - auth_service - INFO - 用户 yangjh@yeah.net 登录成功
+2025-08-22 19:34:18,512 - ui.windows.login_window - INFO - 登录成功
+2025-08-22 19:34:18,519 - AppLauncher - INFO - 用户登录成功: Unknown
+2025-08-22 19:34:18,566 - AppLauncher - INFO - 主窗口已启动
+2025-08-22 19:35:21,479 - main - INFO - 日志系统已配置 - 级别: INFO
+2025-08-22 19:35:21,583 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 19:35:21,583 - AppLauncher - INFO - 启动模式: main
+2025-08-22 19:35:21,583 - AppLauncher - ERROR - 智能启动失败: 'AuthService' object has no attribute 'is_logged_in'
+Traceback (most recent call last):
+  File "/Users/yangjh/Desktop/repo/myqt6app/src/ui/launcher.py", line 117, in _smartLaunch
+    if self.authService.is_logged_in():
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AuthService' object has no attribute 'is_logged_in'. Did you mean: 'isLoggedIn'?
+2025-08-22 19:35:21,584 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 19:35:21,771 - AppLauncher - INFO - 登录窗口已启动
+2025-08-22 19:35:21,771 - main - INFO - 应用程序已启动 - 模式: main
+2025-08-22 19:35:33,728 - main - INFO - 日志系统已配置 - 级别: INFO
+2025-08-22 19:35:33,831 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 19:35:33,831 - AppLauncher - INFO - 启动模式: main
+2025-08-22 19:35:33,831 - AppLauncher - ERROR - 智能启动失败: 'AuthService' object has no attribute 'is_logged_in'
+Traceback (most recent call last):
+  File "/Users/yangjh/Desktop/repo/myqt6app/src/ui/launcher.py", line 117, in _smartLaunch
+    if self.authService.is_logged_in():
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AuthService' object has no attribute 'is_logged_in'. Did you mean: 'isLoggedIn'?
+2025-08-22 19:35:33,832 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 19:35:34,000 - AppLauncher - INFO - 登录窗口已启动
+2025-08-22 19:35:34,000 - main - INFO - 应用程序已启动 - 模式: main
+2025-08-22 19:35:44,801 - data.api.auth_client - INFO - 尝试登录用户: yangjh@yeah.net
+2025-08-22 19:35:46,087 - data.api.auth_client - INFO - 用户登录成功: yangjh@yeah.net
+2025-08-22 19:35:46,087 - session_manager - INFO - 用户 yangjh 会话已开始
+2025-08-22 19:35:46,087 - auth_service - INFO - 用户 yangjh@yeah.net 登录成功
+2025-08-22 19:35:46,087 - ui.windows.login_window - INFO - 登录成功
+2025-08-22 19:35:46,089 - AppLauncher - INFO - 用户登录成功: Unknown
+2025-08-22 19:35:46,122 - AppLauncher - INFO - 主窗口已启动
+2025-08-22 19:36:26,947 - main - INFO - 日志系统已配置 - 级别: INFO
+2025-08-22 19:36:27,054 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 19:36:27,054 - AppLauncher - INFO - 启动模式: main
+2025-08-22 19:36:27,055 - AppLauncher - INFO - 用户未登录，启动登录窗口
+2025-08-22 19:36:27,056 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 19:36:27,250 - AppLauncher - INFO - 登录窗口已启动
+2025-08-22 19:36:27,250 - main - INFO - 应用程序已启动 - 模式: main
+2025-08-22 19:36:37,198 - data.api.auth_client - INFO - 尝试登录用户: yangjh@yeah.net
+2025-08-22 19:36:38,457 - data.api.auth_client - INFO - 用户登录成功: yangjh@yeah.net
+2025-08-22 19:36:38,457 - session_manager - INFO - 用户 yangjh 会话已开始
+2025-08-22 19:36:38,457 - auth_service - INFO - 用户 yangjh@yeah.net 登录成功
+2025-08-22 19:36:38,457 - ui.windows.login_window - INFO - 登录成功
+2025-08-22 19:36:38,459 - AppLauncher - INFO - 用户登录成功: Unknown
+2025-08-22 19:36:38,497 - AppLauncher - INFO - 主窗口已启动
+2025-08-22 19:38:11,912 - main - INFO - 应用程序退出 - 退出码: 0
+2025-08-22 19:38:23,882 - main - INFO - 日志系统已配置 - 级别: INFO
+2025-08-22 19:38:23,985 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 19:38:23,985 - AppLauncher - INFO - 启动模式: main
+2025-08-22 19:38:23,985 - AppLauncher - INFO - 用户未登录，启动登录窗口
+2025-08-22 19:38:23,985 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 19:38:24,156 - AppLauncher - INFO - 登录窗口已启动
+2025-08-22 19:38:24,156 - main - INFO - 应用程序已启动 - 模式: main
+2025-08-22 19:38:34,859 - data.api.auth_client - INFO - 尝试登录用户: yangjh@yeah.net
+2025-08-22 19:38:37,731 - data.api.auth_client - INFO - 用户登录成功: yangjh@yeah.net
+2025-08-22 19:38:37,732 - session_manager - INFO - 用户 yangjh 会话已开始
+2025-08-22 19:38:37,732 - auth_service - INFO - 用户 yangjh@yeah.net 登录成功
+2025-08-22 19:38:37,732 - ui.windows.login_window - INFO - 登录成功
+2025-08-22 19:38:37,739 - AppLauncher - INFO - 用户登录成功: Unknown
+2025-08-22 19:38:37,785 - AppLauncher - INFO - 主窗口已启动
+2025-08-22 19:39:08,541 - main - INFO - 日志系统已配置 - 级别: INFO
+2025-08-22 19:39:08,639 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 19:39:08,639 - AppLauncher - INFO - 启动模式: main
+2025-08-22 19:39:08,639 - AppLauncher - INFO - 用户未登录，启动登录窗口
+2025-08-22 19:39:08,639 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 19:39:08,814 - AppLauncher - INFO - 登录窗口已启动
+2025-08-22 19:39:08,814 - main - INFO - 应用程序已启动 - 模式: main
+2025-08-22 19:39:18,547 - data.api.auth_client - INFO - 尝试登录用户: yangjh@yeah.net
+2025-08-22 19:39:21,151 - data.api.auth_client - INFO - 用户登录成功: yangjh@yeah.net
+2025-08-22 19:39:21,151 - session_manager - INFO - 用户 yangjh 会话已开始
+2025-08-22 19:39:21,151 - auth_service - INFO - 用户 yangjh@yeah.net 登录成功
+2025-08-22 19:39:21,152 - ui.windows.login_window - INFO - 登录成功
+2025-08-22 19:39:21,158 - AppLauncher - INFO - 用户登录成功: Unknown
+2025-08-22 19:39:21,204 - AppLauncher - INFO - 主窗口已启动
+2025-08-22 19:40:12,427 - main - INFO - 日志系统已配置 - 级别: INFO
+2025-08-22 19:40:12,525 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 19:40:12,526 - AppLauncher - INFO - 启动模式: main
+2025-08-22 19:40:12,526 - AppLauncher - INFO - 用户未登录，启动登录窗口
+2025-08-22 19:40:12,526 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 19:40:12,708 - AppLauncher - INFO - 登录窗口已启动
+2025-08-22 19:40:12,708 - main - INFO - 应用程序已启动 - 模式: main
+2025-08-22 19:40:20,931 - data.api.auth_client - INFO - 尝试登录用户: yangjh@yeah.net
+2025-08-22 19:40:23,008 - data.api.auth_client - INFO - 用户登录成功: yangjh@yeah.net
+2025-08-22 19:40:23,009 - session_manager - INFO - 用户 yangjh 会话已开始
+2025-08-22 19:40:23,009 - auth_service - INFO - 用户 yangjh@yeah.net 登录成功
+2025-08-22 19:40:23,009 - ui.windows.login_window - INFO - 登录成功
+2025-08-22 19:40:23,015 - AppLauncher - INFO - 用户登录成功: Unknown
+2025-08-22 19:40:23,066 - AppLauncher - INFO - 主窗口已启动
+2025-08-22 19:41:28,382 - main - INFO - 日志系统已配置 - 级别: INFO
+2025-08-22 19:41:28,489 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 19:41:28,489 - AppLauncher - INFO - 启动模式: main
+2025-08-22 19:41:28,489 - AppLauncher - INFO - 用户未登录，启动登录窗口
+2025-08-22 19:41:28,489 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 19:41:28,682 - AppLauncher - INFO - 登录窗口已启动
+2025-08-22 19:41:28,683 - main - INFO - 应用程序已启动 - 模式: main
+2025-08-22 19:41:38,589 - data.api.auth_client - INFO - 尝试登录用户: yangjh@yeah.net
+2025-08-22 19:41:40,430 - data.api.auth_client - INFO - 用户登录成功: yangjh@yeah.net
+2025-08-22 19:41:40,432 - session_manager - INFO - 用户 yangjh 会话已开始
+2025-08-22 19:41:40,432 - auth_service - INFO - 用户 yangjh@yeah.net 登录成功
+2025-08-22 19:41:40,432 - ui.windows.login_window - INFO - 登录成功
+2025-08-22 19:41:40,439 - AppLauncher - INFO - 用户登录成功: yangjh
+2025-08-22 19:41:40,481 - AppLauncher - INFO - 主窗口已启动
+2025-08-22 19:45:59,997 - main - INFO - 应用程序退出 - 退出码: 0
+2025-08-22 19:51:45,703 - main - INFO - 日志系统已配置 - 级别: INFO
+2025-08-22 19:51:45,811 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 19:51:45,811 - session_manager - INFO - 访问令牌已过期或无效，尝试刷新
+2025-08-22 19:51:45,811 - AppLauncher - INFO - 启动模式: main
+2025-08-22 19:51:45,811 - session_manager - INFO - 访问令牌已过期或无效，尝试刷新
+2025-08-22 19:51:45,811 - AppLauncher - INFO - 用户未登录，启动登录窗口
+2025-08-22 19:51:45,812 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 19:51:45,812 - session_manager - INFO - 访问令牌已过期或无效，尝试刷新
+2025-08-22 19:51:46,024 - AppLauncher - INFO - 登录窗口已启动
+2025-08-22 19:51:46,024 - main - INFO - 应用程序已启动 - 模式: main
+2025-08-22 19:51:57,614 - data.api.auth_client - INFO - 尝试登录用户: yangjh@yeah.net
+2025-08-22 19:52:01,164 - data.api.auth_client - INFO - 用户登录成功: yangjh@yeah.net
+2025-08-22 19:52:01,166 - session_manager - INFO - 用户 yangjh 会话已开始
+2025-08-22 19:52:01,166 - auth_service - INFO - 用户 yangjh@yeah.net 登录成功
+2025-08-22 19:52:01,166 - ui.windows.login_window - INFO - 登录成功
+2025-08-22 19:52:01,175 - AppLauncher - INFO - 用户登录成功: yangjh
+2025-08-22 19:52:01,223 - AppLauncher - INFO - 主窗口已启动
+2025-08-22 19:52:36,269 - main - INFO - 日志系统已配置 - 级别: INFO
+2025-08-22 19:52:36,375 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 19:52:36,375 - session_manager - INFO - 访问令牌已过期或无效，尝试刷新
+2025-08-22 19:52:36,376 - AppLauncher - INFO - 启动模式: main
+2025-08-22 19:52:36,376 - session_manager - INFO - 访问令牌已过期或无效，尝试刷新
+2025-08-22 19:52:36,376 - AppLauncher - INFO - 用户未登录，启动登录窗口
+2025-08-22 19:52:36,376 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 19:52:36,376 - session_manager - INFO - 访问令牌已过期或无效，尝试刷新
+2025-08-22 19:52:36,567 - AppLauncher - INFO - 登录窗口已启动
+2025-08-22 19:52:36,567 - main - INFO - 应用程序已启动 - 模式: main
+2025-08-22 19:52:50,372 - data.api.auth_client - INFO - 尝试登录用户: yangjh@yeah.net
+2025-08-22 19:52:51,591 - data.api.auth_client - INFO - 用户登录成功: yangjh@yeah.net
+2025-08-22 19:52:51,592 - session_manager - INFO - 用户 yangjh 会话已开始
+2025-08-22 19:52:51,592 - auth_service - INFO - 用户 yangjh@yeah.net 登录成功
+2025-08-22 19:52:51,592 - ui.windows.login_window - INFO - 登录成功
+2025-08-22 19:52:51,599 - AppLauncher - INFO - 用户登录成功: yangjh
+2025-08-22 19:52:51,643 - AppLauncher - INFO - 主窗口已启动
+2025-08-22 19:54:24,926 - main - INFO - 日志系统已配置 - 级别: INFO
+2025-08-22 19:54:25,034 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 19:54:25,034 - session_manager - INFO - 访问令牌已过期或无效，尝试刷新
+2025-08-22 19:54:25,034 - AppLauncher - INFO - 启动模式: main
+2025-08-22 19:54:25,035 - session_manager - INFO - 访问令牌已过期或无效，尝试刷新
+2025-08-22 19:54:25,035 - AppLauncher - INFO - 用户未登录，启动登录窗口
+2025-08-22 19:54:25,035 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 19:54:25,035 - session_manager - INFO - 访问令牌已过期或无效，尝试刷新
+2025-08-22 19:54:25,246 - AppLauncher - INFO - 登录窗口已启动
+2025-08-22 19:54:25,246 - main - INFO - 应用程序已启动 - 模式: main
+2025-08-22 19:54:32,495 - data.api.auth_client - INFO - 尝试登录用户: yangjh@yeah.net
+2025-08-22 19:54:36,113 - data.api.auth_client - INFO - 用户登录成功: yangjh@yeah.net
+2025-08-22 19:54:36,113 - session_manager - INFO - 用户 yangjh 会话已开始
+2025-08-22 19:54:36,113 - auth_service - INFO - 用户 yangjh@yeah.net 登录成功
+2025-08-22 19:54:36,114 - ui.windows.login_window - INFO - 登录成功
+2025-08-22 19:54:36,119 - AppLauncher - INFO - 用户登录成功: yangjh
+2025-08-22 19:54:36,160 - AppLauncher - INFO - 主窗口已启动
+2025-08-22 19:55:42,275 - main - INFO - 日志系统已配置 - 级别: INFO
+2025-08-22 19:55:42,375 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 19:55:42,376 - session_manager - INFO - 访问令牌已过期或无效，尝试刷新
+2025-08-22 19:55:42,376 - AppLauncher - INFO - 启动模式: main
+2025-08-22 19:55:42,376 - session_manager - INFO - 访问令牌已过期或无效，尝试刷新
+2025-08-22 19:55:42,376 - AppLauncher - INFO - 用户未登录，启动登录窗口
+2025-08-22 19:55:42,376 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 19:55:42,376 - session_manager - INFO - 访问令牌已过期或无效，尝试刷新
+2025-08-22 19:55:42,552 - AppLauncher - INFO - 登录窗口已启动
+2025-08-22 19:55:42,552 - main - INFO - 应用程序已启动 - 模式: main
+2025-08-22 19:55:51,713 - data.api.auth_client - INFO - 尝试登录用户: yangjh@yeah.net
+2025-08-22 19:55:53,941 - data.api.auth_client - INFO - 用户登录成功: yangjh@yeah.net
+2025-08-22 19:55:53,942 - session_manager - INFO - 用户 yangjh 会话已开始
+2025-08-22 19:55:53,942 - auth_service - INFO - 用户 yangjh@yeah.net 登录成功
+2025-08-22 19:55:53,942 - ui.windows.login_window - INFO - 登录成功
+2025-08-22 19:55:53,948 - AppLauncher - INFO - 用户登录成功: yangjh
+2025-08-22 19:55:53,996 - AppLauncher - INFO - 主窗口已启动

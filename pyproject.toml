@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "myqt6app"
+version = "1.0.0"
+description = "PyQt6 用户权限管理系统"
+requires-python = ">=3.8"
+dependencies = [
+    "PyQt6",
+    "qfluentwidgets",
+    "requests",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-qt",
+    "black",
+    "flake8",
+    "pylint",
+]
+
+# Black 代码格式化工具配置
+[tool.black]
+# 设置较长的行长度或忽略行长度
+line-length = 120
+# 或者完全不限制行长度（不推荐）
+# line-length = 999
+
+# Pylint 配置
+[tool.pylint.format]
+# 忽略行长度检查
+max-line-length = 120
+# 或者禁用行长度检查
+# disable = ["line-too-long"]
+
+[tool.pylint.messages_control]
+# 禁用特定的警告和错误
+disable = [
+    "line-too-long",  # 禁用行长度检查
+    "missing-docstring",
+    "too-few-public-methods",
+]
+
+# isort 导入排序工具配置
+[tool.isort]
+profile = "black"
+line_length = 120
+
+# pytest 配置
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py", "*_test.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]

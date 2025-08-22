@@ -1,0 +1,9 @@
+{
+    "python.defaultInterpreterPath": "/Users/yangjh/Desktop/repo/myqt6app/venv/bin/python",
+    "python.analysis.completeFunctionParens": true,
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true,
+    "python.linting.pylintArgs": [
+        "--rcfile=${workspaceFolder}/.pylintrc"
+    ]
+}

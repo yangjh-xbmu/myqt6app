@@ -3,7 +3,7 @@
 /* 主窗口样式 */
 QWidget {
     background-color: #f8f9fa;
-    font-family: "SF Pro Display", "Segoe UI", "Microsoft YaHei", sans-serif;
+    font-family: "SF Pro Display", "Microsoft YaHei", "Segoe UI", sans-serif;
     font-size: 14px;
     color: #2c3e50;
 }

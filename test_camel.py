@@ -1,0 +1,1 @@
+camelCaseVar = 1

@@ -17,3 +17,36 @@
 2025-08-22 16:11:13,078 - AppLauncher - INFO - 登录窗口已启动
 2025-08-22 16:11:13,078 - main - INFO - 应用程序已启动 - 模式: login
 2025-08-22 16:12:24,985 - main - INFO - 应用程序退出 - 退出码: 0
+2025-08-22 20:01:14,691 - main - INFO - 日志系统已配置 - 级别: INFO
+2025-08-22 20:01:14,791 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 20:01:14,791 - AppLauncher - INFO - 启动模式: main
+2025-08-22 20:01:14,791 - AppLauncher - INFO - 用户未登录，启动登录窗口
+2025-08-22 20:01:14,792 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 20:01:14,978 - AppLauncher - INFO - 登录窗口已启动
+2025-08-22 20:01:14,978 - main - INFO - 应用程序已启动 - 模式: main
+2025-08-22 20:01:44,191 - data.api.auth_client - INFO - 尝试登录用户: yangjh@yeah.net
+2025-08-22 20:01:46,850 - data.api.auth_client - INFO - 用户登录成功: yangjh@yeah.net
+2025-08-22 20:01:46,851 - session_manager - INFO - 用户 yangjh 会话已开始
+2025-08-22 20:01:46,852 - auth_service - INFO - 用户 yangjh@yeah.net 登录成功
+2025-08-22 20:01:46,852 - ui.windows.login_window - INFO - 登录成功
+2025-08-22 20:01:46,860 - AppLauncher - INFO - 用户登录成功: yangjh
+2025-08-22 20:01:46,898 - AppLauncher - INFO - 主窗口已启动
+2025-08-22 20:02:47,063 - main - INFO - 日志系统已配置 - 级别: INFO
+2025-08-22 20:02:47,175 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 20:02:47,175 - AppLauncher - INFO - 启动模式: main
+2025-08-22 20:02:47,175 - AppLauncher - INFO - 用户未登录，启动登录窗口
+2025-08-22 20:02:47,176 - session_manager - INFO - 会话管理器初始化完成
+2025-08-22 20:02:47,381 - AppLauncher - INFO - 登录窗口已启动
+2025-08-22 20:02:47,381 - main - INFO - 应用程序已启动 - 模式: main
+2025-08-22 20:03:10,186 - data.api.auth_client - INFO - 尝试登录用户: yangjh@yeah.net
+2025-08-22 20:03:11,472 - data.api.auth_client - INFO - 用户登录成功: yangjh@yeah.net
+2025-08-22 20:03:11,472 - session_manager - INFO - 用户 yangjh 会话已开始
+2025-08-22 20:03:11,472 - auth_service - INFO - 用户 yangjh@yeah.net 登录成功
+2025-08-22 20:03:11,473 - ui.windows.login_window - INFO - 登录成功
+2025-08-22 20:03:11,481 - AppLauncher - INFO - 用户登录成功: yangjh
+2025-08-22 20:03:11,488 - AppLauncher - INFO - 开始创建MainWindow实例...
+2025-08-22 20:03:11,506 - AppLauncher - INFO - MainWindow实例创建成功
+2025-08-22 20:03:11,506 - AppLauncher - INFO - 开始显示主窗口...
+2025-08-22 20:03:11,516 - AppLauncher - INFO - 主窗口显示成功
+2025-08-22 20:03:11,516 - AppLauncher - INFO - 主窗口已启动
+2025-08-22 20:03:22,310 - main - INFO - 应用程序退出 - 退出码: 0

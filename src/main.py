@@ -9,45 +9,45 @@ import argparse
 from pathlib import Path
 
 # 添加src目录到Python路径
-src_path = Path(__file__).parent
-if str(src_path) not in sys.path:
-    sys.path.insert(0, str(src_path))
+srcPath = Path(__file__).parent
+if str(srcPath) not in sys.path:
+    sys.path.insert(0, str(srcPath))
 
 
 # 延迟导入以避免循环依赖
-def get_imports():
+def getImports():
     """获取所需的导入模块"""
     from PyQt6.QtWidgets import QApplication
     from PyQt6.QtCore import QTranslator, QLocale
     from infrastructure.config.app_config import config
-    from infrastructure.logging.logger import get_logger, configure_logging
+    from infrastructure.logging.logger import getLogger, configureLogging
     from ui.launcher import AppLauncher
 
     return (
         QApplication, QTranslator, QLocale, config,
-        get_logger, configure_logging, AppLauncher
+        getLogger, configureLogging, AppLauncher
     )
 
 
-def setup_application():
+def setupApplication():
     """设置应用程序
 
     Returns:
         应用程序实例
     """
-    QApplication, QTranslator, QLocale, config, _, _, _ = get_imports()
+    qApplication, qTranslator, qLocale, config, _, _, _ = getImports()
 
-    app = QApplication(sys.argv)
+    app = qApplication(sys.argv)
 
     # 设置应用程序信息
-    app.setApplicationName(config.app_name)
-    app.setApplicationVersion(config.app_version)
+    app.setApplicationName(config.appName)
+    app.setApplicationVersion(config.appVersion)
     app.setOrganizationName("MyQt6App")
     app.setOrganizationDomain("myqt6app.com")
 
     # 设置国际化
-    translator = QTranslator()
-    locale = QLocale(config.get('ui.language', 'zh_CN'))
+    translator = qTranslator()
+    locale = qLocale(config.get('ui.language', 'zh_CN'))
 
     if translator.load(locale, "app", "_", "translations"):
         app.installTranslator(translator)
@@ -55,7 +55,7 @@ def setup_application():
     return app
 
 
-def parse_arguments():
+def parseArguments():
     """解析命令行参数
 
     Returns:
@@ -101,13 +101,13 @@ def main():
     """主函数"""
     try:
         # 解析命令行参数
-        args = parse_arguments()
+        args = parseArguments()
 
         # 获取导入的模块
         (
-            _, _, _, config, get_logger,
-            configure_logging, AppLauncher
-        ) = get_imports()
+            _, _, _, config, getLogger,
+            configureLogging, AppLauncher
+        ) = getImports()
 
         # 如果指定了配置文件，设置环境变量
         if args.config:
@@ -116,10 +116,10 @@ def main():
             config.reload()
 
         # 配置日志系统
-        configure_logging(args.log_level, args.debug)
+        configureLogging(logLevel=args.log_level, debugMode=args.debug)
 
         # 创建应用程序
-        app = setup_application()
+        app = setupApplication()
 
         # 创建启动器
         launcher = AppLauncher()
@@ -129,32 +129,32 @@ def main():
         success = launcher.launch(args.mode)
 
         if not success:
-            logger = get_logger('main')
+            logger = getLogger('main')
             logger.error(f"启动模式 {args.mode} 失败")
             return 1
 
         # 记录启动信息
-        logger = get_logger('main')
+        logger = getLogger('main')
         logger.info(f"应用程序已启动 - 模式: {args.mode}")
 
         # 运行应用程序
-        exit_code = app.exec()
+        exitCode = app.exec()
 
-        logger.info(f"应用程序退出 - 退出码: {exit_code}")
-        return exit_code
+        logger.info(f"应用程序退出 - 退出码: {exitCode}")
+        return exitCode
 
     except KeyboardInterrupt:
         print("\n应用程序被用户中断")
         return 0
 
-    except Exception as e:
-        print(f"应用程序启动失败: {e}")
+    except Exception as exception:
+        print(f"应用程序启动失败: {exception}")
 
         # 尝试记录错误
         try:
-            _, _, _, _, get_logger, _ = get_imports()
-            logger = get_logger('main')
-            logger.error(f"应用程序启动失败: {e}", exc_info=True)
+            _, _, _, _, getLogger, _, _ = getImports()
+            logger = getLogger('main')
+            logger.error(f"应用程序启动失败: {exception}", exc_info=True)
         except Exception:
             pass
 

@@ -1,0 +1,24 @@
+[flake8]
+# 忽略行长度检查
+ignore = E501
+# 或者设置更长的行长度限制
+# max-line-length = 120
+
+# 其他常见的忽略项（可选）
+# E203: whitespace before ':'
+# W503: line break before binary operator
+# F401: imported but unused
+# ignore = E501,E203,W503,F401
+
+# 排除的文件和目录
+exclude = 
+    .git,
+    __pycache__,
+    .venv,
+    venv,
+    .tox,
+    dist,
+    build,
+    *.egg-info,
+    legacy,
+    worker

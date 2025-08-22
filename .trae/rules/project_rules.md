@@ -1,7 +1,11 @@
+把用户的自然语言转换成需求文档，再转换为设计文档，最后转换为任务文档。
+
+0. 先写api，然后自动测试，测试完后，再写业务逻辑，最后再写表现层。
 1. node包管理器使用pnpm
 2. think in English，write in Chinese
 3. 项目名称使用中划线分隔，例如：my-qt6-app
 4. cloudflare workers 脚本语言使用python
+5. 不要去纠正行长度的格式问题。
 
 ## 分层架构设计
 
@@ -122,10 +126,14 @@ myqt6app/
 ### 编码规范
 
 1. **命名规范**:
-   - 类名使用PascalCase
-   - 函数和变量使用snake_case
-   - 常量使用UPPER_CASE
-   - 私有成员使用下划线前缀
+    - **类 (Classes)**: 使用 `PascalCase`。例如: `MainWindow`, `UserService`。
+    - **函数 (Functions) & 方法 (Methods)**: 使用 `camelCase` (小驼峰命名法)。这与 PyQt6 的风格保持一致。例如: `getUserData`, `calculateTotal`。
+    - **变量 (Variables)**: 使用 `camelCase` (小驼峰命名法)。例如: `userName`, `itemList`。
+    - **常量 (Constants)**: 使用 `UPPER_SNAKE_CASE`。例如: `MAX_CONNECTIONS`, `DEFAULT_TIMEOUT`。
+    - **模块/文件名 (Modules/Filenames)**: 使用 `snake_case`。例如: `user_service.py`, `database_utils.py`。
+    - **包/目录名 (Packages/Directories)**: 使用 `snake_case`。例如: `business_logic`, `data_access`。
+    - **私有成员 (Private Members)**: 按照约定，使用单个下划线前缀 `_` 表示内部使用，但不强制。例如: `_internal_data`, `_private_method`。
+    - **名称修饰 (Name Mangling)**: 当不希望子类意外覆盖基类方法时，使用双下划线前缀 `__`。例如: `__very_private_member`。
 
 2. **注释规范**:
    - 使用docstring描述类和函数

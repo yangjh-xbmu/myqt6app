@@ -1,0 +1,107 @@
+[MASTER]
+# 指定要加载的插件
+# load-plugins=
+
+# 使用多个进程来加速 Pylint
+jobs=1
+
+# 控制是否应该尝试猜测常见的拼写错误
+suggestion-mode=yes
+
+[MESSAGES CONTROL]
+# 禁用特定的警告、错误或约定检查
+disable=
+    line-too-long,          # 禁用行长度检查
+    missing-docstring,      # 禁用缺少文档字符串检查
+    too-few-public-methods, # 禁用公共方法过少检查
+    too-many-arguments,     # 禁用参数过多检查
+    too-many-locals,        # 禁用局部变量过多检查
+    too-many-branches,      # 禁用分支过多检查
+    too-many-statements,    # 禁用语句过多检查
+    import-error,           # 禁用导入错误检查（对于某些第三方库）
+    no-name-in-module,      # 禁用模块中没有名称检查
+    unused-import,          # 禁用未使用导入检查
+    unused-variable,        # 禁用未使用变量检查
+    broad-except,           # 禁用过于宽泛的异常捕获检查
+    attribute-defined-outside-init,  # 禁用在__init__外定义属性检查
+    import-outside-toplevel, # 禁用顶层外导入检查（项目使用延迟导入）
+    no-else-return,         # 禁用return后不必要的else检查
+    no-else-continue,       # 禁用continue后不必要的else检查
+    raise-missing-from,     # 禁用缺少from的raise检查
+    inconsistent-return-statements, # 禁用不一致的return语句检查
+
+[FORMAT]
+# 最大行长度
+max-line-length=999
+
+# 如果要完全忽略行长度，可以设置一个很大的值
+# max-line-length=999
+
+# 字符串引号的一致性
+single-line-if-stmt=no
+
+# 正则表达式，用于检查类名是否为PascalCase
+class-rgx=([A-Z_][a-zA-Z0-9]+)$
+
+# 正则表达式，用于检查模块名是否为snake_case
+module-rgx=(([a-z_][a-z0-9_]*)|([A-Z][a-zA-Z0-9]+))$
+
+[BASIC]
+# 好的变量名正则表达式
+good-names=i,j,k,ex,Run,_,id,db,ui,app,api
+
+# 函数名命名规则 - camelCase
+function-naming-style=any
+function-rgx=(__[a-zA-Z0-9_]+__|[a-z][a-zA-Z0-9]*)$
+
+# 变量名命名规则 - camelCase
+variable-naming-style=any
+variable-rgx=[a-z][a-zA-Z0-9]*$
+
+# 方法名命名规则 - camelCase
+method-naming-style=any
+method-rgx=(__[a-zA-Z0-9_]+__|[a-z][a-zA-Z0-9]*)$
+
+# 参数名命名规则 - camelCase
+argument-naming-style=any
+argument-rgx=[a-z][a-zA-Z0-9]*$
+
+# 属性名命名规则 - camelCase
+attr-naming-style=any
+attr-rgx=[a-z][a-zA-Z0-9]*$
+
+# 坏的变量名正则表达式
+bad-names=foo,bar,baz,toto,tutu,tata
+
+# 包含名称提示的正则表达式
+include-naming-hint=no
+
+[DESIGN]
+# 类的最大属性数
+max-attributes=15
+
+# 函数或方法的最大参数数
+max-args=10
+
+# 函数或方法的最大局部变量数
+max-locals=25
+
+# 类的最大公共方法数
+max-public-methods=25
+
+# 函数或方法的最大返回语句数
+max-returns=10
+
+# 函数或方法的最大分支数
+max-branches=15
+
+# 函数或方法的最大语句数
+max-statements=60
+
+[IMPORTS]
+# 已知的第三方模块列表
+known-third-party=PyQt6,qfluentwidgets,requests
+
+[EXCEPTIONS]
+# 应该被报告为异常的模块
+overgeneral-exceptions=builtins.Exception

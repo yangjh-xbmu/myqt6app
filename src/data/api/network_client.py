@@ -13,41 +13,41 @@ class NetworkWorker(QThread):
     """网络请求工作线程"""
     finished = pyqtSignal(dict)
     error = pyqtSignal(str)
-    
-    def __init__(self, url, data, request_type='POST'):
+
+    def __init__(self, url, data, requestType='POST'):
         super().__init__()
         self.url = url
         self.data = data
-        self.request_type = request_type
-    
+        self.requestType = requestType
+
     def run(self):
         try:
             headers = {'Content-Type': 'application/json'}
-            
-            if self.request_type == 'POST':
+
+            if self.requestType == 'POST':
                 response = requests.post(
-                    self.url, 
-                    data=json.dumps(self.data), 
+                    self.url,
+                    data=json.dumps(self.data),
                     headers=headers,
                     timeout=10
                 )
             else:
                 response = requests.get(
-                    self.url, 
-                    headers=headers, 
+                    self.url,
+                    headers=headers,
                     timeout=10
                 )
-            
+
             if response.status_code == 200:
                 result = response.json()
                 self.finished.emit(result)
             else:
-                error_data = response.json() if response.content else {}
-                error_msg = error_data.get(
+                errorData = response.json() if response.content else {}
+                errorMsg = errorData.get(
                     'error', f'HTTP {response.status_code}'
                 )
-                self.error.emit(error_msg)
-                
+                self.error.emit(errorMsg)
+
         except requests.exceptions.RequestException as e:
             self.error.emit(f'网络请求失败: {str(e)}')
         except json.JSONDecodeError as e:
