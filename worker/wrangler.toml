@@ -1,0 +1,12 @@
+name = "qt6-python-worker"
+main = "src/entry.py"
+compatibility_date = "2024-04-01"
+compatibility_flags = ["python_workers"]
+
+[[routes]]
+pattern = "pw.yangxz.top/*"
+zone_name = "yangxz.top"
+
+[vars]
+API_VERSION = "1.0.0"
+ENVIRONMENT = "development"

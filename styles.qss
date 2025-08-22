@@ -1,0 +1,252 @@
+/* styles.qss - Qt6 应用的现代化样式 */
+
+/* 主窗口样式 */
+QWidget {
+    background-color: #f8f9fa;
+    font-family: "SF Pro Display", "Segoe UI", "Microsoft YaHei", sans-serif;
+    font-size: 14px;
+    color: #2c3e50;
+}
+
+/* 标题标签样式 */
+TitleLabel {
+    color: #1e3a8a;
+    font-weight: 600;
+    font-size: 24px;
+    padding: 10px 0;
+}
+
+/* 输入框样式 */
+LineEdit {
+    background-color: #ffffff;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-size: 14px;
+    color: #374151;
+    selection-background-color: #3b82f6;
+}
+
+LineEdit:focus {
+    border-color: #3b82f6;
+    background-color: #ffffff;
+    outline: none;
+}
+
+LineEdit:hover {
+    border-color: #9ca3af;
+}
+
+/* 密码输入框样式 */
+PasswordLineEdit {
+    background-color: #ffffff;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-size: 14px;
+    color: #374151;
+}
+
+PasswordLineEdit:focus {
+    border-color: #3b82f6;
+    background-color: #ffffff;
+}
+
+/* 文本编辑器样式 */
+TextEdit {
+    background-color: #ffffff;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 12px;
+    font-family: "SF Mono", "Consolas", "Monaco", monospace;
+    font-size: 13px;
+    color: #374151;
+    line-height: 1.5;
+}
+
+TextEdit:focus {
+    border-color: #3b82f6;
+}
+
+/* 主要按钮样式 */
+PrimaryPushButton {
+    background-color: #3b82f6;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-weight: 600;
+    font-size: 14px;
+    min-height: 20px;
+}
+
+PrimaryPushButton:hover {
+    background-color: #2563eb;
+    transform: translateY(-1px);
+}
+
+PrimaryPushButton:pressed {
+    background-color: #1d4ed8;
+    transform: translateY(0px);
+}
+
+PrimaryPushButton:disabled {
+    background-color: #9ca3af;
+    color: #6b7280;
+}
+
+/* 普通按钮样式 */
+PushButton {
+    background-color: #ffffff;
+    color: #374151;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: 500;
+    font-size: 14px;
+    min-height: 20px;
+}
+
+PushButton:hover {
+    background-color: #f3f4f6;
+    border-color: #d1d5db;
+    transform: translateY(-1px);
+}
+
+PushButton:pressed {
+    background-color: #e5e7eb;
+    transform: translateY(0px);
+}
+
+PushButton:disabled {
+    background-color: #f9fafb;
+    color: #9ca3af;
+    border-color: #f3f4f6;
+}
+
+/* 复选框样式 */
+CheckBox {
+    color: #374151;
+    font-size: 14px;
+    spacing: 8px;
+}
+
+CheckBox::indicator {
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    border: 2px solid #d1d5db;
+    background-color: #ffffff;
+}
+
+CheckBox::indicator:hover {
+    border-color: #3b82f6;
+}
+
+CheckBox::indicator:checked {
+    background-color: #3b82f6;
+    border-color: #3b82f6;
+    image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iOSIgdmlld0JveD0iMCAwIDEyIDkiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0xIDQuNUw0LjUgOEwxMSAxIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K);
+}
+
+/* 超链接按钮样式 */
+HyperlinkButton {
+    color: #3b82f6;
+    text-decoration: none;
+    font-size: 14px;
+    border: none;
+    background: transparent;
+    padding: 4px 0;
+}
+
+HyperlinkButton:hover {
+    color: #2563eb;
+    text-decoration: underline;
+}
+
+/* 信息栏样式增强 */
+InfoBar {
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin: 8px 0;
+    font-weight: 500;
+}
+
+/* 滚动条样式 */
+QScrollBar:vertical {
+    background-color: #f3f4f6;
+    width: 8px;
+    border-radius: 4px;
+    margin: 0;
+}
+
+QScrollBar::handle:vertical {
+    background-color: #d1d5db;
+    border-radius: 4px;
+    min-height: 20px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background-color: #9ca3af;
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    height: 0;
+    width: 0;
+}
+
+/* 工具提示样式 */
+QToolTip {
+    background-color: #1f2937;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 12px;
+    opacity: 0.95;
+}
+
+/* 动画效果 */
+PrimaryPushButton, PushButton {
+    transition: all 0.2s ease-in-out;
+}
+
+LineEdit, PasswordLineEdit, TextEdit {
+    transition: border-color 0.2s ease-in-out;
+}
+
+/* 响应式设计 - 高DPI支持 */
+@media (min-resolution: 2dppx) {
+    QWidget {
+        font-size: 15px;
+    }
+    
+    TitleLabel {
+        font-size: 26px;
+    }
+}
+
+/* 暗色主题支持 */
+[data-theme="dark"] QWidget {
+    background-color: #1f2937;
+    color: #f9fafb;
+}
+
+[data-theme="dark"] LineEdit,
+[data-theme="dark"] PasswordLineEdit,
+[data-theme="dark"] TextEdit {
+    background-color: #374151;
+    border-color: #4b5563;
+    color: #f9fafb;
+}
+
+[data-theme="dark"] PushButton {
+    background-color: #374151;
+    border-color: #4b5563;
+    color: #f9fafb;
+}
+
+[data-theme="dark"] PushButton:hover {
+    background-color: #4b5563;
+}
