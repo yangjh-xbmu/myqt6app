@@ -174,3 +174,10 @@ Cloudflare Python Workers 的 500 错误通常源于：
 3. **请求/响应处理差异** - 需要使用 Workers 特定的 API 方法
 
 解决这些问题的关键是保持代码简单、添加完善的异常处理，并采用渐进式开发方法。随着 Python Workers 功能的不断完善，这些限制可能会逐步解除。
+
+## 相关资源
+
+- [Cloudflare Workers Python 官方文档](https://developers.cloudflare.com/workers/languages/python/)
+- [D1 数据库文档](https://developers.cloudflare.com/d1/)
+- [Wrangler CLI 文档](https://developers.cloudflare.com/workers/wrangler/)
+- [D1 JsProxy 对象处理指南](./d1-jsproxy-handling-guide.md) - 详细的 JsProxy 对象处理解决方案

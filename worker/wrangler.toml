@@ -10,3 +10,8 @@ zone_name = "yangxz.top"
 [vars]
 API_VERSION = "1.0.0"
 ENVIRONMENT = "development"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "qt6-user-db"
+database_id = "8bd93f5d-c7dc-4d03-bf3f-744ab52db5c0"

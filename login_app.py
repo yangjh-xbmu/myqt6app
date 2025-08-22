@@ -1,7 +1,9 @@
 # login_app.py
 
 import sys
-from PyQt6.QtCore import Qt
+import json
+import requests
+from PyQt6.QtCore import Qt, QThread, pyqtSignal
 from PyQt6.QtWidgets import QApplication, QWidget, QVBoxLayout, QHBoxLayout
 
 # 导入 fluent-widgets 的核心组件
@@ -10,6 +12,49 @@ from qfluentwidgets import (
     PrimaryPushButton, CheckBox, HyperlinkButton, InfoBar,
     InfoBarPosition
 )
+
+
+class NetworkWorker(QThread):
+    """网络请求工作线程"""
+    finished = pyqtSignal(dict)
+    error = pyqtSignal(str)
+    
+    def __init__(self, url, data, request_type='POST'):
+        super().__init__()
+        self.url = url
+        self.data = data
+        self.request_type = request_type
+    
+    def run(self):
+        try:
+            headers = {'Content-Type': 'application/json'}
+            
+            if self.request_type == 'POST':
+                response = requests.post(
+                    self.url, 
+                    data=json.dumps(self.data), 
+                    headers=headers,
+                    timeout=10
+                )
+            else:
+                response = requests.get(self.url, headers=headers, timeout=10)
+            
+            if response.status_code == 200:
+                result = response.json()
+                self.finished.emit(result)
+            else:
+                error_data = response.json() if response.content else {}
+                error_msg = error_data.get(
+                    'error', f'HTTP {response.status_code}'
+                )
+                self.error.emit(error_msg)
+                
+        except requests.exceptions.RequestException as e:
+            self.error.emit(f'网络请求失败: {str(e)}')
+        except json.JSONDecodeError:
+            self.error.emit('服务器响应格式错误')
+        except Exception as e:
+            self.error.emit(f'未知错误: {str(e)}')
 
 
 class LoginWindow(QWidget):
@@ -86,7 +131,7 @@ class LoginWindow(QWidget):
 
     def onLogin(self):
         """处理登录按钮点击事件"""
-        username = self.usernameLineEdit.text()
+        username = self.usernameLineEdit.text().strip()
         password = self.passwordLineEdit.text()
 
         # 简单的验证逻辑
@@ -101,27 +146,56 @@ class LoginWindow(QWidget):
             )
             return
 
-        # 假设正确的用户名和密码是 admin / 123456
-        if username == "admin" and password == "123456":
-            InfoBar.success(
-                title='登录成功',
-                content=f"欢迎回来, {username}!",
-                duration=2000,
-                parent=self,
-                position=InfoBarPosition.TOP
-            )
-            # 在这里，你可以关闭登录窗口并打开主窗口
-            # self.close()
-            # self.main_window = MainWindow()
-            # self.main_window.show()
-        else:
-            InfoBar.warning(
-                title='登录失败',
-                content="用户名或密码错误！",
-                duration=2000,
-                parent=self,
-                position=InfoBarPosition.TOP
-            )
+        # 禁用登录按钮，显示加载状态
+        self.loginButton.setEnabled(False)
+        self.loginButton.setText("登录中...")
+        
+        # 创建网络请求线程
+        self.worker = NetworkWorker(
+            'https://pw.yangxz.top/login',
+            {
+                'username': username,
+                'password': password
+            }
+        )
+        self.worker.finished.connect(self.on_login_success)
+        self.worker.error.connect(self.on_login_error)
+        self.worker.start()
+    
+    def on_login_success(self, result):
+        """登录成功回调"""
+        self.loginButton.setEnabled(True)
+        self.loginButton.setText("登 录")
+        
+        # 显示成功信息
+        user_info = result.get('user', {})
+        display_name = user_info.get('display_name', '用户')
+        
+        InfoBar.success(
+            title='登录成功',
+            content=f"欢迎回来, {display_name}!",
+            duration=3000,
+            parent=self,
+            position=InfoBarPosition.TOP
+        )
+        
+        # 在这里可以保存用户信息或跳转到主界面
+        # self.close()
+        # self.main_window = MainWindow(user_info)
+        # self.main_window.show()
+    
+    def on_login_error(self, error_msg):
+        """登录失败回调"""
+        self.loginButton.setEnabled(True)
+        self.loginButton.setText("登 录")
+        
+        InfoBar.error(
+            title='登录失败',
+            content=f"登录失败: {error_msg}",
+            duration=3000,
+            parent=self,
+            position=InfoBarPosition.TOP
+        )
 
 
 if __name__ == '__main__':
