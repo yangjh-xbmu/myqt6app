@@ -1,0 +1,71 @@
+name: 快速测试
+
+# 触发条件 - 所有分支的推送和PR
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+# 环境变量
+env:
+  PYTHON_VERSION: '3.11'
+  QT_QPA_PLATFORM: offscreen
+
+jobs:
+  # 快速测试作业
+  quick-test:
+    name: 快速测试
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: 检出代码
+      uses: actions/checkout@v4
+      
+    - name: 设置Python环境
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ env.PYTHON_VERSION }}
+        
+    - name: 安装系统依赖
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y xvfb libxkbcommon-x11-0 libxcb-icccm4 libxcb-image0 libxcb-keysyms1 libxcb-randr0 libxcb-render-util0 libxcb-xinerama0 libxcb-xfixes0
+        
+    - name: 缓存Python依赖
+      uses: actions/cache@v3
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
+          
+    - name: 安装Python依赖
+      run: |
+        python -m pip install --upgrade pip
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+        
+    - name: 运行快速测试
+      run: |
+        xvfb-run -a python run_tests.py --fast
+        
+    - name: 基础代码检查
+      run: |
+        # 检查Python语法
+        python -m py_compile src/main.py
+        
+        # 简单的代码风格检查
+        if command -v flake8 &> /dev/null; then
+          flake8 src/ --count --select=E9,F63,F7,F82 --show-source --statistics
+        fi
+      continue-on-error: true
+        
+    - name: 测试结果总结
+      if: always()
+      run: |
+        echo "🎯 快速测试完成"
+        echo "📊 测试结果: ${{ job.status }}"
+        if [ "${{ job.status }}" = "success" ]; then
+          echo "✅ 所有测试通过!"
+        else
+          echo "❌ 部分测试失败，请检查日志"
+        fi

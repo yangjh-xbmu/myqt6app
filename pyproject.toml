@@ -55,3 +55,19 @@ testpaths = ["tests"]
 python_files = ["test_*.py", "*_test.py"]
 python_classes = ["Test*"]
 python_functions = ["test_*"]
+addopts = [
+    "-v",                    # 详细输出
+    "--tb=short",           # 简短的回溯信息
+    "--strict-markers",     # 严格标记模式
+    "--disable-warnings",   # 禁用警告
+    "--color=yes",          # 彩色输出
+]
+markers = [
+    "unit: 单元测试标记",
+    "integration: 集成测试标记",
+    "ui: UI测试标记",
+    "slow: 慢速测试标记",
+    "skip_ci: 在CI中跳过的测试",
+]
+minversion = "6.0"
+qt_api = "pyqt6"

@@ -1,0 +1,28 @@
+# PyQt6 GUI框架
+PyQt6==6.6.1
+PyQt6-Qt6==6.6.1
+PyQt6-sip==13.6.0
+
+# qfluentwidgets UI组件库
+PyQt-Fluent-Widgets==1.4.4
+
+# 测试框架
+pytest==7.4.3
+pytest-qt==4.2.0
+pytest-mock==3.12.0
+pytest-cov==4.1.0
+
+# 文件监控
+watchdog==3.0.0
+
+# 代码质量工具
+flake8==6.1.0
+black==23.11.0
+isort==5.12.0
+
+# 类型检查
+mypy==1.7.1
+
+# 其他工具
+colorama==0.4.6
+click==8.1.7
